@@ -1,0 +1,2380 @@
+{
+  "universidad": "UNLaM",
+  "carrera": "Ingeniería Informática",
+  "periodo": "1er semestre 2026",
+  "comisiones": [
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "1300",
+      "dias": "Lu08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "1600",
+      "dias": "Lu14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "2600",
+      "dias": "Ma14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "4600",
+      "dias": "Ju14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "5300",
+      "dias": "Vi08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "5600",
+      "dias": "Vi14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo",
+      "observacion": "Recursantes"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "6300",
+      "dias": "Sa08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "7224",
+      "dias": "Ma12a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "7275",
+      "dias": "MaVi12a14",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0901",
+      "descripcion": "INGLES NIVEL I",
+      "codComision": "7664",
+      "dias": "Sa12a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "1300",
+      "dias": "Lu08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "1600",
+      "dias": "Lu14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "2600",
+      "dias": "Ma14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "4600",
+      "dias": "Ju14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "5300",
+      "dias": "Vi08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "5300",
+      "dias": "Vi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo",
+      "observacion": "Recursantes"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "5600",
+      "dias": "Vi14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "6300",
+      "dias": "Sa08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "7175",
+      "dias": "LuVi12a14",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "7444",
+      "dias": "Ju12a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0902",
+      "descripcion": "INGLES NIVEL II",
+      "codComision": "7664",
+      "dias": "Sa12a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "1200",
+      "dias": "Lu10a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "1500",
+      "dias": "Lu16a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "1700",
+      "dias": "Lu19a21",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "2100",
+      "dias": "Ma08a10",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "2200",
+      "dias": "Ma10a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "2400",
+      "dias": "Ma14a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "2500",
+      "dias": "Ma16a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "2700",
+      "dias": "Ma19a21",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "2800",
+      "dias": "Ma21a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "3100",
+      "dias": "Mi08a10",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "3200",
+      "dias": "Mi10a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "3500",
+      "dias": "Mi16a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo",
+      "observacion": "Recursantes"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "4200",
+      "dias": "Ju10a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "4400",
+      "dias": "Ju14a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "4500",
+      "dias": "Ju16a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "4700",
+      "dias": "Ju19a21",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "4800",
+      "dias": "Ju21a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "5100",
+      "dias": "Vi08a10",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "5500",
+      "dias": "Vi16a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "5700",
+      "dias": "Vi19a21",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "5800",
+      "dias": "Vi21a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "6100",
+      "dias": "Sa08a10",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "6200",
+      "dias": "Sa10a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "6400",
+      "dias": "Sa14a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "7300",
+      "dias": "Mi12a14",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0903",
+      "descripcion": "INGLES NIVEL III",
+      "codComision": "7600",
+      "dias": "Sa12a14",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "1100",
+      "dias": "Lu08a10",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "1400",
+      "dias": "Lu14a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "1500",
+      "dias": "Lu16a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo",
+      "observacion": "Recursantes"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "1800",
+      "dias": "Lu21a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "2100",
+      "dias": "Ma08a10",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "2200",
+      "dias": "Ma10a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "2500",
+      "dias": "Ma16a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "2700",
+      "dias": "Ma19a21",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "3100",
+      "dias": "Mi08a10",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "3200",
+      "dias": "Mi10a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "3400",
+      "dias": "Mi14a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "3700",
+      "dias": "Mi19a21",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "3800",
+      "dias": "Mi21a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "4100",
+      "dias": "Ju08a10",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "4400",
+      "dias": "Ju14a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "4500",
+      "dias": "Ju16a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "4700",
+      "dias": "Ju19a21",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "4800",
+      "dias": "Ju21a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "5200",
+      "dias": "Vi10a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "5700",
+      "dias": "Vi19a21",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "5800",
+      "dias": "Vi21a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "6100",
+      "dias": "Sa08a10",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "6200",
+      "dias": "Sa10a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "6400",
+      "dias": "Sa14a16",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0904",
+      "descripcion": "INGLES NIVEL IV",
+      "codComision": "7600",
+      "dias": "Sa12a14",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "1300",
+      "dias": "Lu08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "1600",
+      "dias": "Lu14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "2600",
+      "dias": "Ma14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "4600",
+      "dias": "Ju14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "5600",
+      "dias": "Vi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "6300",
+      "dias": "Sa08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "1300",
+      "dias": "Lu08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "1600",
+      "dias": "Lu14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "2600",
+      "dias": "Ma14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "4600",
+      "dias": "Ju14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "5600",
+      "dias": "Vi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "6300",
+      "dias": "Sa08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3599",
+      "descripcion": "REDES MOVILES E IOT",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3621",
+      "descripcion": "MATEMATICA DISCRETA",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3621",
+      "descripcion": "MATEMATICA DISCRETA",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3621",
+      "descripcion": "MATEMATICA DISCRETA",
+      "codComision": "4600",
+      "dias": "Ju14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3621",
+      "descripcion": "MATEMATICA DISCRETA",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3621",
+      "descripcion": "MATEMATICA DISCRETA",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Presencial",
+      "sede": "Ituzaingo",
+      "observacion": "Cursada en Ituzaingó"
+    },
+    {
+      "codigoMateria": "3622",
+      "descripcion": "ANALISIS MATEMATICO I",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3622",
+      "descripcion": "ANALISIS MATEMATICO I",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3622",
+      "descripcion": "ANALISIS MATEMATICO I",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Presencial",
+      "sede": "Ituzaingo",
+      "observacion": "Cursada en Ituzaingó"
+    },
+    {
+      "codigoMateria": "3622",
+      "descripcion": "ANALISIS MATEMATICO I",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3622",
+      "descripcion": "ANALISIS MATEMATICO I",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3622",
+      "descripcion": "ANALISIS MATEMATICO I",
+      "codComision": "5600",
+      "dias": "Vi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3622",
+      "descripcion": "ANALISIS MATEMATICO I",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3623",
+      "descripcion": "PROGRAMACION INICIAL",
+      "codComision": "1300",
+      "dias": "Lu08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3623",
+      "descripcion": "PROGRAMACION INICIAL",
+      "codComision": "1600",
+      "dias": "Lu14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3623",
+      "descripcion": "PROGRAMACION INICIAL",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3623",
+      "descripcion": "PROGRAMACION INICIAL",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3623",
+      "descripcion": "PROGRAMACION INICIAL",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3623",
+      "descripcion": "PROGRAMACION INICIAL",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Presencial",
+      "sede": "Ituzaingo",
+      "observacion": "Cursada en Ituzaingó"
+    },
+    {
+      "codigoMateria": "3623",
+      "descripcion": "PROGRAMACION INICIAL",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo",
+      "observacion": "Recursantes"
+    },
+    {
+      "codigoMateria": "3624",
+      "descripcion": "INTRODUCCION A LOS SISTEMAS DE INFORMACION",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Presencial",
+      "sede": "Ituzaingo",
+      "observacion": "Cursada en Ituzaingó"
+    },
+    {
+      "codigoMateria": "3624",
+      "descripcion": "INTRODUCCION A LOS SISTEMAS DE INFORMACION",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3624",
+      "descripcion": "INTRODUCCION A LOS SISTEMAS DE INFORMACION",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3624",
+      "descripcion": "INTRODUCCION A LOS SISTEMAS DE INFORMACION",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3625",
+      "descripcion": "SISTEMAS DE NUMERACION",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Presencial",
+      "sede": "Ituzaingo",
+      "observacion": "Cursada en Ituzaingó"
+    },
+    {
+      "codigoMateria": "3625",
+      "descripcion": "SISTEMAS DE NUMERACION",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3625",
+      "descripcion": "SISTEMAS DE NUMERACION",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3625",
+      "descripcion": "SISTEMAS DE NUMERACION",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3625",
+      "descripcion": "SISTEMAS DE NUMERACION",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3626",
+      "descripcion": "PRINCIPIOS DE CALIDAD DE SOFTWARE",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3626",
+      "descripcion": "PRINCIPIOS DE CALIDAD DE SOFTWARE",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3626",
+      "descripcion": "PRINCIPIOS DE CALIDAD DE SOFTWARE",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3626",
+      "descripcion": "PRINCIPIOS DE CALIDAD DE SOFTWARE",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3627",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA I",
+      "codComision": "1300",
+      "dias": "Lu08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3627",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA I",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3627",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA I",
+      "codComision": "2600",
+      "dias": "Ma14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3627",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA I",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3627",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA I",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3627",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA I",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3627",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA I",
+      "codComision": "4600",
+      "dias": "Ju14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3627",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA I",
+      "codComision": "5300",
+      "dias": "Vi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3627",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA I",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3628",
+      "descripcion": "FISICA I",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3628",
+      "descripcion": "FISICA I",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3628",
+      "descripcion": "FISICA I",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3628",
+      "descripcion": "FISICA I",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3629",
+      "descripcion": "PROGRAMACION ESTRUCTURADA BASICA",
+      "codComision": "1300",
+      "dias": "Lu08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3629",
+      "descripcion": "PROGRAMACION ESTRUCTURADA BASICA",
+      "codComision": "1600",
+      "dias": "Lu14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3629",
+      "descripcion": "PROGRAMACION ESTRUCTURADA BASICA",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3629",
+      "descripcion": "PROGRAMACION ESTRUCTURADA BASICA",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3629",
+      "descripcion": "PROGRAMACION ESTRUCTURADA BASICA",
+      "codComision": "2600",
+      "dias": "Ma14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3629",
+      "descripcion": "PROGRAMACION ESTRUCTURADA BASICA",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Presencial",
+      "sede": "Ituzaingo",
+      "observacion": "Cursada en Ituzaingó"
+    },
+    {
+      "codigoMateria": "3629",
+      "descripcion": "PROGRAMACION ESTRUCTURADA BASICA",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3629",
+      "descripcion": "PROGRAMACION ESTRUCTURADA BASICA",
+      "codComision": "4600",
+      "dias": "Ju14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3629",
+      "descripcion": "PROGRAMACION ESTRUCTURADA BASICA",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3630",
+      "descripcion": "INTRODUCCION A LA GESTION DE REQUISITOS",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3630",
+      "descripcion": "INTRODUCCION A LA GESTION DE REQUISITOS",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3630",
+      "descripcion": "INTRODUCCION A LA GESTION DE REQUISITOS",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3630",
+      "descripcion": "INTRODUCCION A LA GESTION DE REQUISITOS",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3631",
+      "descripcion": "FUNDAMENTOS DE SISTEMAS EMBEBIDOS",
+      "codComision": "1300",
+      "dias": "Lu08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3631",
+      "descripcion": "FUNDAMENTOS DE SISTEMAS EMBEBIDOS",
+      "codComision": "1600",
+      "dias": "Lu14a18",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3631",
+      "descripcion": "FUNDAMENTOS DE SISTEMAS EMBEBIDOS",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3631",
+      "descripcion": "FUNDAMENTOS DE SISTEMAS EMBEBIDOS",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3631",
+      "descripcion": "FUNDAMENTOS DE SISTEMAS EMBEBIDOS",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3631",
+      "descripcion": "FUNDAMENTOS DE SISTEMAS EMBEBIDOS",
+      "codComision": "5300",
+      "dias": "Vi08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3632",
+      "descripcion": "INTRODUCCION A LOS PROYECTOS INFORMATICOS",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3632",
+      "descripcion": "INTRODUCCION A LOS PROYECTOS INFORMATICOS",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3632",
+      "descripcion": "INTRODUCCION A LOS PROYECTOS INFORMATICOS",
+      "codComision": "5300",
+      "dias": "Vi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3632",
+      "descripcion": "INTRODUCCION A LOS PROYECTOS INFORMATICOS",
+      "codComision": "6300",
+      "dias": "Sa08a12",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3633",
+      "descripcion": "ANALISIS MATEMATICO II",
+      "codComision": "1600",
+      "dias": "Lu14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3633",
+      "descripcion": "ANALISIS MATEMATICO II",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3633",
+      "descripcion": "ANALISIS MATEMATICO II",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3633",
+      "descripcion": "ANALISIS MATEMATICO II",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3633",
+      "descripcion": "ANALISIS MATEMATICO II",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3634",
+      "descripcion": "FISICA II",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3634",
+      "descripcion": "FISICA II",
+      "codComision": "5300",
+      "dias": "Vi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3635",
+      "descripcion": "TOPICOS DE PROGRAMACION",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3635",
+      "descripcion": "TOPICOS DE PROGRAMACION",
+      "codComision": "2600",
+      "dias": "Ma14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3635",
+      "descripcion": "TOPICOS DE PROGRAMACION",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3635",
+      "descripcion": "TOPICOS DE PROGRAMACION",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3635",
+      "descripcion": "TOPICOS DE PROGRAMACION",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3635",
+      "descripcion": "TOPICOS DE PROGRAMACION",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3635",
+      "descripcion": "TOPICOS DE PROGRAMACION",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3635",
+      "descripcion": "TOPICOS DE PROGRAMACION",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3635",
+      "descripcion": "TOPICOS DE PROGRAMACION",
+      "codComision": "6300",
+      "dias": "Sa08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3636",
+      "descripcion": "BASES DE DATOS",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3636",
+      "descripcion": "BASES DE DATOS",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3636",
+      "descripcion": "BASES DE DATOS",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3636",
+      "descripcion": "BASES DE DATOS",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3636",
+      "descripcion": "BASES DE DATOS",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3636",
+      "descripcion": "BASES DE DATOS",
+      "codComision": "6300",
+      "dias": "Sa08a12",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3637",
+      "descripcion": "ANALISIS DE SISTEMAS",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3637",
+      "descripcion": "ANALISIS DE SISTEMAS",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3637",
+      "descripcion": "ANALISIS DE SISTEMAS",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3637",
+      "descripcion": "ANALISIS DE SISTEMAS",
+      "codComision": "5300",
+      "dias": "Vi08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3638",
+      "descripcion": "ARQUITECTURA DE COMPUTADORAS",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3638",
+      "descripcion": "ARQUITECTURA DE COMPUTADORAS",
+      "codComision": "2600",
+      "dias": "Ma14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo",
+      "observacion": "Recursantes"
+    },
+    {
+      "codigoMateria": "3638",
+      "descripcion": "ARQUITECTURA DE COMPUTADORAS",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3638",
+      "descripcion": "ARQUITECTURA DE COMPUTADORAS",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3638",
+      "descripcion": "ARQUITECTURA DE COMPUTADORAS",
+      "codComision": "5600",
+      "dias": "Vi14a18",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3638",
+      "descripcion": "ARQUITECTURA DE COMPUTADORAS",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3639",
+      "descripcion": "ANALISIS MATEMATICO III",
+      "codComision": "2300",
+      "dias": "Ma08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3639",
+      "descripcion": "ANALISIS MATEMATICO III",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3639",
+      "descripcion": "ANALISIS MATEMATICO III",
+      "codComision": "5600",
+      "dias": "Vi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3639",
+      "descripcion": "ANALISIS MATEMATICO III",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3640",
+      "descripcion": "ALGORITMOS Y ESTRUCTURAS DE DATOS",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3640",
+      "descripcion": "ALGORITMOS Y ESTRUCTURAS DE DATOS",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3640",
+      "descripcion": "ALGORITMOS Y ESTRUCTURAS DE DATOS",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3641",
+      "descripcion": "BASES DE DATOS APLICADAS",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3641",
+      "descripcion": "BASES DE DATOS APLICADAS",
+      "codComision": "5600",
+      "dias": "Vi14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3642",
+      "descripcion": "PRINCIPIOS DE DISEÑO DE SISTEMAS",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3642",
+      "descripcion": "PRINCIPIOS DE DISEÑO DE SISTEMAS",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3643",
+      "descripcion": "REDES DE COMPUTADORAS",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3643",
+      "descripcion": "REDES DE COMPUTADORAS",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3643",
+      "descripcion": "REDES DE COMPUTADORAS",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3644",
+      "descripcion": "GESTION DE LAS ORGANIZACIONES",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3644",
+      "descripcion": "GESTION DE LAS ORGANIZACIONES",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3644",
+      "descripcion": "GESTION DE LAS ORGANIZACIONES",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3645",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA II",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3645",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA II",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3645",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA II",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3645",
+      "descripcion": "ALGEBRA Y GEOMETRIA ANALITICA II",
+      "codComision": "6300",
+      "dias": "Sa08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3646",
+      "descripcion": "PARADIGMAS DE PROGRAMACION",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3646",
+      "descripcion": "PARADIGMAS DE PROGRAMACION",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3647",
+      "descripcion": "REQUISITOS AVANZADOS",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3647",
+      "descripcion": "REQUISITOS AVANZADOS",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3648",
+      "descripcion": "DISEÑO DE SOFTWARE",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3648",
+      "descripcion": "DISEÑO DE SOFTWARE",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3649",
+      "descripcion": "SISTEMAS OPERATIVOS",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3649",
+      "descripcion": "SISTEMAS OPERATIVOS",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3649",
+      "descripcion": "SISTEMAS OPERATIVOS",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3650",
+      "descripcion": "SEGURIDAD DE LA INFORMACION",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3651",
+      "descripcion": "PROBABILIDAD Y ESTADISTICA",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3651",
+      "descripcion": "PROBABILIDAD Y ESTADISTICA",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3651",
+      "descripcion": "PROBABILIDAD Y ESTADISTICA",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3651",
+      "descripcion": "PROBABILIDAD Y ESTADISTICA",
+      "codComision": "4300",
+      "dias": "Ju08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3651",
+      "descripcion": "PROBABILIDAD Y ESTADISTICA",
+      "codComision": "5300",
+      "dias": "Vi08a12",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3652",
+      "descripcion": "PROGRAMACION AVANZADA",
+      "codComision": "4600",
+      "dias": "Ju14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3652",
+      "descripcion": "PROGRAMACION AVANZADA",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3653",
+      "descripcion": "ARQUITECTURA DE SISTEMAS SOFTWARE",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3654",
+      "descripcion": "VIRTUALIZACION DE HARDWARE",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3654",
+      "descripcion": "VIRTUALIZACION DE HARDWARE",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3655",
+      "descripcion": "AUDITORIA Y LEGISLACION",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3656",
+      "descripcion": "ESTADISTICA APLICADA",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3656",
+      "descripcion": "ESTADISTICA APLICADA",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3657",
+      "descripcion": "AUTOMATAS Y GRAMATICAS",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3658",
+      "descripcion": "PROGRAMACION CONCURRENTE",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3659",
+      "descripcion": "GESTION APLICADA AL DESARROLLO DE SOFTWARE I",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3660",
+      "descripcion": "SISTEMAS OPERATIVOS AVANZADOS",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3660",
+      "descripcion": "SISTEMAS OPERATIVOS AVANZADOS",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3661",
+      "descripcion": "GESTION DE PROYECTOS",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3662",
+      "descripcion": "MATEMATICA APLICADA",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3663",
+      "descripcion": "LENGUAJES Y COMPILADORES",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3663",
+      "descripcion": "LENGUAJES Y COMPILADORES",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3664",
+      "descripcion": "INTELIGENCIA ARTIFICIAL",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3665",
+      "descripcion": "GESTION APLICADA AL DESARROLLO DE SOFTWARE II",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3666",
+      "descripcion": "SEGURIDAD APLICADA Y FORENSIA",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3667",
+      "descripcion": "GESTION DE LA CALIDAD EN PROCESOS DE SISTEMAS",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3668",
+      "descripcion": "INTELIGENCIA ARTIFICIAL APLICADA",
+      "codComision": "5900",
+      "dias": "Vi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3669",
+      "descripcion": "INNOVACION Y EMPRENDEDORISMO",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3670",
+      "descripcion": "CIENCIA DE DATOS",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3671",
+      "descripcion": "PROYECTO FINAL DE CARRERA",
+      "codComision": "6600",
+      "dias": "Sa14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3675",
+      "descripcion": "PRACTICA PROFESIONAL SUPERVISADA",
+      "codComision": "5600",
+      "dias": "Vi14a18",
+      "modalidad": "Presencial",
+      "sede": "San Justo",
+      "observacion": "A Distancia"
+    },
+    {
+      "codigoMateria": "3676",
+      "descripcion": "RESPONSABILIDAD SOCIAL UNIVERSITARIA",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3676",
+      "descripcion": "RESPONSABILIDAD SOCIAL UNIVERSITARIA",
+      "codComision": "2900",
+      "dias": "Ma19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3676",
+      "descripcion": "RESPONSABILIDAD SOCIAL UNIVERSITARIA",
+      "codComision": "3300",
+      "dias": "Mi08a12",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3676",
+      "descripcion": "RESPONSABILIDAD SOCIAL UNIVERSITARIA",
+      "codComision": "3600",
+      "dias": "Mi14a18",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3676",
+      "descripcion": "RESPONSABILIDAD SOCIAL UNIVERSITARIA",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3676",
+      "descripcion": "RESPONSABILIDAD SOCIAL UNIVERSITARIA",
+      "codComision": "5300",
+      "dias": "Vi08a12",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3677",
+      "descripcion": "LENGUAJE ORIENTADO A NEGOCIOS",
+      "codComision": "3900",
+      "dias": "Mi19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3678",
+      "descripcion": "TECNOLOGIAS EN SEGURIDAD",
+      "codComision": "1900",
+      "dias": "Lu19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3679",
+      "descripcion": "VISION ARTIFICIAL",
+      "codComision": "4900",
+      "dias": "Ju19a23",
+      "modalidad": "Sincrónica Teams",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "3680",
+      "descripcion": "TALLER DE INTEGRACION",
+      "codComision": "7600",
+      "dias": "Sa12a14",
+      "modalidad": "Semipresencial",
+      "sede": "San Justo"
+    }
+  ]
+}

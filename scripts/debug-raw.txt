@@ -1,0 +1,1414 @@
+Oferta de Materias
+Oferta de Materias correspondiente al 1er Cuatrimestre año academico 2026
+Hace clic en cada modalidad para más información.
+Seleccione su Plan de Estudios
+(201)Plan:23-1= INGENIERIA EN INFORMATICA - DTO. INGENIERIA
+Consultar
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+0901 	INGLES NIVEL I 	1300 	Lu08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+1600 	Lu14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+1900 	Lu19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2300 	Ma08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2600 	Ma14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3300 	Mi08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3600 	Mi14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+Principal (/index3.jsp?page=inicio3&modulo=principal) 	Mi Matricula 	Inscripciones 	Tramites Online 	Otras Operaciones
+Cuenta Office 365 (office?page=office365) 	Cuotas 	Descargar App (/index3.jsp?page=campus)
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	1/19
+
+-- 1 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3900 	Mi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4600 	Ju14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5300 	Vi08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5600 	Vi14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Recursantes
+(https://miel.unlam.edu.ar/data/public/ModalidadRecursantes.jpg)
+San
+Justo
+5900 	Vi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+6300 	Sa08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+7224 	Ma12a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+7275 	MaVi12a14 Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+7664 	Sa12a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+0902 	INGLES NIVEL II 	1300 	Lu08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+1600 	Lu14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+1900 	Lu19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2300 	Ma08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2600 	Ma14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	2/19
+
+-- 2 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+2900 	Ma19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3300 	Mi08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3600 	Mi14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4600 	Ju14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5300 	Vi08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5300 	Vi08a12 	Recursantes
+(https://miel.unlam.edu.ar/data/public/ModalidadRecursantes.jpg)
+San
+Justo
+5600 	Vi14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+6300 	Sa08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+7175 	LuVi12a14 Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+7444 	Ju12a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+7664 	Sa12a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+0903 	INGLES NIVEL III 	1200 	Lu10a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+1500 	Lu16a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	3/19
+
+-- 3 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+1700 	Lu19a21 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2100 	Ma08a10 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2200 	Ma10a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2400 	Ma14a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2500 	Ma16a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2700 	Ma19a21 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2800 	Ma21a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3100 	Mi08a10 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3200 	Mi10a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3500 	Mi16a18 	Recursantes
+(https://miel.unlam.edu.ar/data/public/ModalidadRecursantes.jpg)
+San
+Justo
+4200 	Ju10a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4400 	Ju14a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4500 	Ju16a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4700 	Ju19a21 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4800 	Ju21a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5100 	Vi08a10 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5500 	Vi16a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	4/19
+
+-- 4 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+5700 	Vi19a21 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5800 	Vi21a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+6100 	Sa08a10 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+6200 	Sa10a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+6400 	Sa14a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+7300 	Mi12a14 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+7600 	Sa12a14 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+0904 	INGLES NIVEL IV 	1100 	Lu08a10 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+1400 	Lu14a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+1500 	Lu16a18 	Recursantes
+(https://miel.unlam.edu.ar/data/public/ModalidadRecursantes.jpg)
+San
+Justo
+1800 	Lu21a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2100 	Ma08a10 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2200 	Ma10a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2500 	Ma16a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2700 	Ma19a21 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3100 	Mi08a10 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3200 	Mi10a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	5/19
+
+-- 5 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3400 	Mi14a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3700 	Mi19a21 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3800 	Mi21a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4100 	Ju08a10 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4400 	Ju14a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4500 	Ju16a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4700 	Ju19a21 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4800 	Ju21a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5200 	Vi10a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5700 	Vi19a21 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5800 	Vi21a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+6100 	Sa08a10 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+6200 	Sa10a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+6400 	Sa14a16 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+7600 	Sa12a14 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+0911 	COMPUTACION NIVEL I 	1300 	Lu08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+1600 	Lu14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	6/19
+
+-- 6 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+1900 	Lu19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2600 	Ma14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3300 	Mi08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3600 	Mi14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4600 	Ju14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5600 	Vi14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+6300 	Sa08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+6900 	A distancia A Distancia
+(https://miel.unlam.edu.ar/data/public/ModalidadADistancia.jpg)
+San
+Justo
+0912 	COMPUTACION NIVEL II 	1300 	Lu08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+1600 	Lu14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+1900 	Lu19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	7/19
+
+-- 7 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2600 	Ma14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3300 	Mi08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3600 	Mi14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4600 	Ju14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5600 	Vi14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+6300 	Sa08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+6900 	A distancia A Distancia
+(https://miel.unlam.edu.ar/data/public/ModalidadADistancia.jpg)
+San
+Justo
+3599 	REDES MOVILES E IOT 	1900 	Lu19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3621 	MATEMATICA DISCRETA 	2900 	Ma19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3300 	Mi08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	8/19
+
+-- 8 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+4600 	Ju14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Cursada en Ituzaingó
+(https://miel.unlam.edu.ar/data/public/ituzaingo.jpg)
+Ituzaingo
+3622 	ANALISIS MATEMATICO I 	1900 	Lu19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Cursada en Ituzaingó
+(https://miel.unlam.edu.ar/data/public/ituzaingo.jpg)
+Ituzaingo
+4300 	Ju08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5600 	Vi14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3623 	PROGRAMACION INICIAL 	1300 	Lu08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+1600 	Lu14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3300 	Mi08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Cursada en Ituzaingó
+(https://miel.unlam.edu.ar/data/public/ituzaingo.jpg)
+Ituzaingo
+4900 	Ju19a23 	Recursantes
+(https://miel.unlam.edu.ar/data/public/ModalidadRecursantes.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	9/19
+
+-- 9 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3624 	INTRODUCCION A LOS
+SISTEMAS DE
+INFORMACION
+1900 	Lu19a23 	Cursada en Ituzaingó
+(https://miel.unlam.edu.ar/data/public/ituzaingo.jpg)
+Ituzaingo
+2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3300 	Mi08a12 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+4300 	Ju08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3625 	SISTEMAS DE NUMERACION 1900 	Lu19a23 	Cursada en Ituzaingó
+(https://miel.unlam.edu.ar/data/public/ituzaingo.jpg)
+Ituzaingo
+2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3300 	Mi08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3626 	PRINCIPIOS DE CALIDAD DE
+SOFTWARE
+2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+4900 	Ju19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3627 	ALGEBRA Y GEOMETRIA
+ANALITICA I
+1300 	Lu08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+1900 	Lu19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2600 	Ma14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	10/19
+
+-- 10 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3900 	Mi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+4300 	Ju08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4600 	Ju14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5300 	Vi08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3628 	FISICA I 	2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3600 	Mi14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3629 	PROGRAMACION
+ESTRUCTURADA BASICA
+1300 	Lu08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+1600 	Lu14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+1900 	Lu19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2600 	Ma14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Cursada en Ituzaingó
+(https://miel.unlam.edu.ar/data/public/ituzaingo.jpg)
+Ituzaingo
+4300 	Ju08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4600 	Ju14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	11/19
+
+-- 11 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+5900 	Vi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3630 	INTRODUCCION A LA
+GESTION DE REQUISITOS
+2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3631 	FUNDAMENTOS DE
+SISTEMAS EMBEBIDOS
+1300 	Lu08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+1600 	Lu14a18 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+2900 	Ma19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3300 	Mi08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5300 	Vi08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3632 	INTRODUCCION A LOS
+PROYECTOS
+INFORMATICOS
+2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+5300 	Vi08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+6300 	Sa08a12 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3633 	ANALISIS MATEMATICO II 	1600 	Lu14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	12/19
+
+-- 12 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3900 	Mi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3634 	FISICA II 	1900 	Lu19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5300 	Vi08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3635 	TOPICOS DE
+PROGRAMACION
+1900 	Lu19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2600 	Ma14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3600 	Mi14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+6300 	Sa08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3636 	BASES DE DATOS 	1900 	Lu19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3900 	Mi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	13/19
+
+-- 13 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3900 	Mi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+4900 	Ju19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+6300 	Sa08a12 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3637 	ANALISIS DE SISTEMAS 	1900 	Lu19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+2300 	Ma08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+5300 	Vi08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3638 	ARQUITECTURA DE
+COMPUTADORAS
+1900 	Lu19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+2600 	Ma14a18 	Recursantes
+(https://miel.unlam.edu.ar/data/public/ModalidadRecursantes.jpg)
+San
+Justo
+3600 	Mi14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5600 	Vi14a18 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+5900 	Vi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3639 	ANALISIS MATEMATICO III 	2300 	Ma08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5600 	Vi14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	14/19
+
+-- 14 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3640 	ALGORITMOS Y
+ESTRUCTURAS DE DATOS
+1900 	Lu19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3300 	Mi08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3600 	Mi14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3641 	BASES DE DATOS
+APLICADAS
+2900 	Ma19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5600 	Vi14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3642 	PRINCIPIOS DE DISEÑO DE
+SISTEMAS
+3900 	Mi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3643 	REDES DE COMPUTADORAS 3300 	Mi08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3644 	GESTION DE LAS
+ORGANIZACIONES
+2900 	Ma19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3645 	ALGEBRA Y GEOMETRIA
+ANALITICA II
+3300 	Mi08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3600 	Mi14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+6300 	Sa08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	15/19
+
+-- 15 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3646 	PARADIGMAS DE
+PROGRAMACION
+2900 	Ma19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5900 	Vi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3647 	REQUISITOS AVANZADOS 	1900 	Lu19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3648 	DISEÑO DE SOFTWARE 	1900 	Lu19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3649 	SISTEMAS OPERATIVOS 	1900 	Lu19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3900 	Mi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+4900 	Ju19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3650 	SEGURIDAD DE LA
+INFORMACION
+3900 	Mi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3651 	PROBABILIDAD Y
+ESTADISTICA
+2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3600 	Mi14a18 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+4300 	Ju08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5300 	Vi08a12 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3652 	PROGRAMACION AVANZADA 4600 	Ju14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+4900 	Ju19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	16/19
+
+-- 16 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3653 	ARQUITECTURA DE
+SISTEMAS SOFTWARE
+1900 	Lu19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3654 	VIRTUALIZACION DE
+HARDWARE
+2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+4900 	Ju19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3655 	AUDITORIA Y LEGISLACION 	2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3656 	ESTADISTICA APLICADA 	2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+4900 	Ju19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3657 	AUTOMATAS Y GRAMATICAS 5900 	Vi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3658 	PROGRAMACION
+CONCURRENTE
+3900 	Mi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3659 	GESTION APLICADA AL
+DESARROLLO DE
+SOFTWARE I
+4900 	Ju19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3660 	SISTEMAS OPERATIVOS
+AVANZADOS
+1900 	Lu19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3661 	GESTION DE PROYECTOS 	3900 	Mi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3662 	MATEMATICA APLICADA 	5900 	Vi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3663 	LENGUAJES Y
+COMPILADORES
+1900 	Lu19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3664 	INTELIGENCIA ARTIFICIAL 	3900 	Mi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	17/19
+
+-- 17 of 19 --
+
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3665 	GESTION APLICADA AL
+DESARROLLO DE
+SOFTWARE II
+2900 	Ma19a23 	Presencial
+(https://miel.unlam.edu.ar/data/public/ModalidadPresencial.jpg)
+San
+Justo
+3666 	SEGURIDAD APLICADA Y
+FORENSIA
+1900 	Lu19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3667 	GESTION DE LA CALIDAD EN
+PROCESOS DE SISTEMAS
+2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3668 	INTELIGENCIA ARTIFICIAL
+APLICADA
+5900 	Vi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3669 	INNOVACION Y
+EMPRENDEDORISMO
+2900 	Ma19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3670 	CIENCIA DE DATOS 	4900 	Ju19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3671 	PROYECTO FINAL DE
+CARRERA
+6600 	Sa14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3675 	PRACTICA PROFESIONAL
+SUPERVISADA
+5600 	Vi14a18 	A Distancia
+(https://miel.unlam.edu.ar/data/public/ModalidadADistancia.jpg)
+San
+Justo
+3676 	RESPONSABILIDAD SOCIAL
+UNIVERSITARIA
+1900 	Lu19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+2900 	Ma19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3300 	Mi08a12 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3600 	Mi14a18 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+3900 	Mi19a23 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+5300 	Vi08a12 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3677 	LENGUAJE ORIENTADO A
+NEGOCIOS
+3900 	Mi19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3678 	TECNOLOGIAS EN
+SEGURIDAD
+1900 	Lu19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+3679 	VISION ARTIFICIAL 	4900 	Ju19a23 	Sincrónica Teams
+(https://miel.unlam.edu.ar/data/public/SincronicaMsTeams.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	18/19
+
+-- 18 of 19 --
+
+© UNLaM 2021 v2.5.0 | Todos los derechos reservados
+Salir (/index3.jsp?page=salir)	Contactanos (/index3.jsp?page=feedback&modulo=otras_operaciones)
+Código Descripción
+Cod.
+Comisión 	Turno Días 	Modalidad 	Sede 	Observacion
+3680 	TALLER DE INTEGRACION 	7600 	Sa12a14 	Semipresencial
+(https://miel.unlam.edu.ar/data/public/ModalidadSemipresencial.jpg)
+San
+Justo
+13/3/26, 12:25 	UNLaM | Intraconsulta
+https://alumno2.unlam.edu.ar/index3.jsp?page=co_oferta_materias2&modulo=inscripciones 	19/19
+
+-- 19 of 19 --
+
