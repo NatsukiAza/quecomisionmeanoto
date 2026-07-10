@@ -13,6 +13,12 @@ interface Props {
   isDark: boolean
   onAdd: (codigo: string) => void
   onRemove: (codigo: string) => void
+  /**
+   * Materias que, si se agregan, dejan al planner sin combinaciones válidas
+   * bajo los filtros/pines actuales. Se pintan en rojo con un "!" pero siguen
+   * siendo seleccionables.
+   */
+  problematicMaterias?: Set<string>
 }
 
 export default function MateriaSidebar({
@@ -22,6 +28,7 @@ export default function MateriaSidebar({
   isDark,
   onAdd,
   onRemove,
+  problematicMaterias,
 }: Props) {
   const [search, setSearch] = useState('')
 
@@ -132,32 +139,67 @@ export default function MateriaSidebar({
 
         {filteredMaterias.map(materia => {
           const comisionCount = comisiones.filter(c => c.codigoMateria === materia.codigo).length
+          const problematic = problematicMaterias?.has(materia.codigo) ?? false
+          // Rojos coherentes con dark/light
+          const redText = isDark ? '#fca5a5' : '#b91c1c'
+          const redMuted = isDark ? '#f87171' : '#dc2626'
+          const redHover = isDark ? 'rgba(220, 38, 38, 0.18)' : '#fee2e2'
+          const restingBg = problematic ? (isDark ? 'rgba(220, 38, 38, 0.08)' : '#fef2f2') : 'transparent'
+          const hoverBg = problematic ? redHover : (isDark ? '#334155' : '#f1f5f9')
           return (
             <button
               key={materia.codigo}
               onClick={() => !atLimit && onAdd(materia.codigo)}
               disabled={atLimit}
-              className="w-full text-left rounded-lg px-2.5 py-2 text-sm transition-colors"
+              className="w-full text-left rounded-lg px-2.5 py-2 text-sm transition-colors flex items-start gap-2"
               style={{
-                color: atLimit ? mutedColor : textColor,
+                color: atLimit ? mutedColor : (problematic ? redText : textColor),
                 cursor: atLimit ? 'not-allowed' : 'pointer',
                 opacity: atLimit ? 0.5 : 1,
+                background: restingBg,
               }}
+              title={
+                problematic
+                  ? 'Agregar esta materia te va a dejar sin combinaciones válidas'
+                  : undefined
+              }
               onMouseEnter={e => {
                 if (!atLimit) {
-                  (e.currentTarget as HTMLButtonElement).style.background = isDark ? '#334155' : '#f1f5f9'
+                  (e.currentTarget as HTMLButtonElement).style.background = hoverBg
                 }
               }}
               onMouseLeave={e => {
-                (e.currentTarget as HTMLButtonElement).style.background = 'transparent'
+                (e.currentTarget as HTMLButtonElement).style.background = restingBg
               }}
             >
-              <span className="block font-medium leading-tight">
-                {materia.nombre}
+              <span className="flex-1 min-w-0">
+                <span className="block font-medium leading-tight">
+                  {materia.nombre}
+                </span>
+                <span
+                  className="block text-xs mt-0.5"
+                  style={{ color: problematic ? redMuted : mutedColor }}
+                >
+                  {comisionCount} comisión{comisionCount !== 1 ? 'es' : ''}
+                </span>
               </span>
-              <span className="block text-xs mt-0.5" style={{ color: mutedColor }}>
-                {comisionCount} comisión{comisionCount !== 1 ? 'es' : ''}
-              </span>
+              {problematic && (
+                <span
+                  className="shrink-0 inline-flex items-center justify-center rounded-full font-bold"
+                  style={{
+                    width: 18,
+                    height: 18,
+                    background: redMuted,
+                    color: '#ffffff',
+                    fontSize: 11,
+                    lineHeight: 1,
+                    marginTop: 1,
+                  }}
+                  aria-label="Advertencia"
+                >
+                  !
+                </span>
+              )}
             </button>
           )
         })}

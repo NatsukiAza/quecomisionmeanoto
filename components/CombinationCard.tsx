@@ -10,9 +10,18 @@ interface Props {
   colorMap: Map<string, number>
   isDark: boolean
   index: number
+  pinnedComisiones?: Set<string>
+  onTogglePin?: (id: string) => void
 }
 
-export default function CombinationCard({ combination, colorMap, isDark, index }: Props) {
+export default function CombinationCard({
+  combination,
+  colorMap,
+  isDark,
+  index,
+  pinnedComisiones,
+  onTogglePin,
+}: Props) {
   return (
     <div
       className="rounded-xl p-4 flex flex-col gap-3 transition-shadow hover:shadow-lg"
@@ -50,7 +59,13 @@ export default function CombinationCard({ combination, colorMap, isDark, index }
       </div>
 
       {/* Weekly grid (full width) */}
-      <WeeklyGrid combination={combination} colorMap={colorMap} isDark={isDark} />
+      <WeeklyGrid
+        combination={combination}
+        colorMap={colorMap}
+        isDark={isDark}
+        pinnedComisiones={pinnedComisiones}
+        onTogglePin={onTogglePin}
+      />
     </div>
   )
 }

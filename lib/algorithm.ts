@@ -56,9 +56,57 @@ export function esSabado(dias: string): boolean {
 }
 
 /** True if two comisiones share at least one day (regardless of time overlap). */
-function sharesDay(a: Comision, b: Comision): boolean {
+export function sharesDay(a: Comision, b: Comision): boolean {
   const daysA = new Set(parseDias(a.dias).map(x => x.dia))
   return parseDias(b.dias).some(x => daysA.has(x.dia))
+}
+
+/**
+ * Fast "does at least one valid combination exist?" check. Short-circuits on
+ * the first success instead of enumerating every combination like
+ * `getValidCombinations`. Ideal para chequeos por materia en la sidebar.
+ */
+export function hasAnyValidCombination(
+  selectedMaterias: string[],
+  allComisiones: Comision[],
+  options: { excludeMismoDia?: boolean } = {}
+): boolean {
+  const { excludeMismoDia = false } = options
+  if (selectedMaterias.length === 0) return false
+
+  const groups = selectedMaterias.map(cod =>
+    allComisiones.filter(c => c.codigoMateria === cod)
+  )
+  if (groups.some(g => g.length === 0)) return false
+
+  let found = false
+  const current: Comision[] = []
+
+  function backtrack(index: number): void {
+    if (found) return
+    if (index === groups.length) {
+      found = true
+      return
+    }
+    for (const comision of groups[index]) {
+      if (found) return
+      let conflicts = false
+      for (const c of current) {
+        if (hasConflict(c, comision) || (excludeMismoDia && sharesDay(c, comision))) {
+          conflicts = true
+          break
+        }
+      }
+      if (!conflicts) {
+        current.push(comision)
+        backtrack(index + 1)
+        current.pop()
+      }
+    }
+  }
+
+  backtrack(0)
+  return found
 }
 
 /**
@@ -132,4 +180,59 @@ export function getMaterias(
   return Array.from(seen.entries())
     .map(([codigo, nombre]) => ({ codigo, nombre }))
     .sort((a, b) => a.nombre.localeCompare(b.nombre))
+}
+
+/**
+ * When no valid combinations exist, diagnose *why*.
+ *
+ * - `emptyMaterias`: materias that ended up with 0 comisiones after the current
+ *   filters (excluir turnos, sábado, etc). Quitando estas destraba todo.
+ * - `conflictingPairs`: pares de materias donde *toda* comisión de A choca con
+ *   *toda* comisión de B (o comparten día si `excludeMismoDia` está activo).
+ *   Quitar cualquiera de las dos habilita nuevas combinaciones.
+ *
+ * No cubre conflictos de orden ≥ 3 (donde ningún par choca pero tres materias
+ * juntas no entran), pero para los horarios típicos de la UNLaM los conflictos
+ * suelen ser de pares.
+ */
+export function diagnoseConflicts(
+  selectedMaterias: string[],
+  filteredComisiones: Comision[],
+  options: { excludeMismoDia?: boolean } = {}
+): { emptyMaterias: string[]; conflictingPairs: Array<[string, string]> } {
+  const { excludeMismoDia = false } = options
+  const groups = new Map<string, Comision[]>()
+  for (const cod of selectedMaterias) {
+    groups.set(
+      cod,
+      filteredComisiones.filter(c => c.codigoMateria === cod)
+    )
+  }
+
+  const emptyMaterias = selectedMaterias.filter(cod => (groups.get(cod) ?? []).length === 0)
+
+  const conflictingPairs: Array<[string, string]> = []
+  for (let i = 0; i < selectedMaterias.length; i++) {
+    const codA = selectedMaterias[i]
+    const groupA = groups.get(codA) ?? []
+    if (groupA.length === 0) continue
+    for (let j = i + 1; j < selectedMaterias.length; j++) {
+      const codB = selectedMaterias[j]
+      const groupB = groups.get(codB) ?? []
+      if (groupB.length === 0) continue
+
+      let hasNonConflicting = false
+      outer: for (const a of groupA) {
+        for (const b of groupB) {
+          if (hasConflict(a, b)) continue
+          if (excludeMismoDia && sharesDay(a, b)) continue
+          hasNonConflicting = true
+          break outer
+        }
+      }
+      if (!hasNonConflicting) conflictingPairs.push([codA, codB])
+    }
+  }
+
+  return { emptyMaterias, conflictingPairs }
 }

@@ -4,17 +4,28 @@ import { useState, useMemo, useEffect, useDeferredValue, useCallback } from 'rea
 import UniversitySelector from '@/components/UniversitySelector'
 import MateriaSidebar from '@/components/MateriaSidebar'
 import CombinationCard from '@/components/CombinationCard'
-import { getValidCombinations, getTurno, esSabado, comisionId } from '@/lib/algorithm'
+import FiltersModal, { type FilterKey } from '@/components/FiltersModal'
+import NoCombinationsHelper from '@/components/NoCombinationsHelper'
+import {
+  getValidCombinations,
+  getTurno,
+  esSabado,
+  comisionId,
+  diagnoseConflicts,
+  hasAnyValidCombination,
+} from '@/lib/algorithm'
 import type { OfertaData } from '@/lib/types'
 import { MAX_MATERIAS } from '@/lib/types'
 import { chipStyle } from '@/lib/colors'
-
-type FilterKey = 'mañana' | 'tarde' | 'noche' | 'sabado' | 'mismo-dia'
 
 export default function Home() {
   const [ofertaData, setOfertaData] = useState<OfertaData | null>(null)
   const [selectedMaterias, setSelectedMaterias] = useState<string[]>([])
   const [excludedFilters, setExcludedFilters] = useState<Set<FilterKey>>(new Set())
+  // Comisiones "fijadas": comisionId(c) — al menos una por materia; si hay una,
+  // esa materia se restringe a esa única comisión ignorando los excluir.
+  const [pinnedComisiones, setPinnedComisiones] = useState<Set<string>>(new Set())
+  const [filtersOpen, setFiltersOpen] = useState(false)
   const [isDark, setIsDark] = useState(false)
 
   // Sync dark class on <html> and read system preference on mount
@@ -34,6 +45,7 @@ export default function Home() {
   // Defer heavy computation so UI stays responsive while typing/interacting
   const deferredMaterias = useDeferredValue(selectedMaterias)
   const deferredExcluded = useDeferredValue(excludedFilters)
+  const deferredPinned = useDeferredValue(pinnedComisiones)
 
   // Deduplicate comisiones: the source data can contain exact duplicates
   // (same materia/slot/modalidad/sede) which would create phantom combinations.
@@ -48,16 +60,29 @@ export default function Home() {
     })
   }, [ofertaData])
 
-  // Comisiones filtered by the per-comision checkboxes (turnos + sábado)
+  // Materias que tienen una comisión fijada → { codigoMateria: comisionId }
+  const pinnedByMateria = useMemo(() => {
+    const map = new Map<string, string>()
+    for (const c of uniqueComisiones) {
+      const id = comisionId(c)
+      if (deferredPinned.has(id)) map.set(c.codigoMateria, id)
+    }
+    return map
+  }, [uniqueComisiones, deferredPinned])
+
+  // Aplica los excluir + fija por materia: si una materia tiene comisión fijada,
+  // sólo esa comisión participa (los excluir se ignoran para respetar la elección).
   const filteredComisiones = useMemo(() => {
-    if (deferredExcluded.size === 0) return uniqueComisiones
     return uniqueComisiones.filter(c => {
+      const pinnedId = pinnedByMateria.get(c.codigoMateria)
+      if (pinnedId) return comisionId(c) === pinnedId
+      if (deferredExcluded.size === 0) return true
       if (deferredExcluded.has('sabado') && esSabado(c.dias)) return false
       const turno = getTurno(c.dias)
       if (turno && deferredExcluded.has(turno)) return false
       return true
     })
-  }, [uniqueComisiones, deferredExcluded])
+  }, [uniqueComisiones, pinnedByMateria, deferredExcluded])
 
   const { combinations, total } = useMemo(() => {
     if (!ofertaData || deferredMaterias.length === 0) return { combinations: [], total: 0 }
@@ -65,6 +90,61 @@ export default function Home() {
       excludeMismoDia: deferredExcluded.has('mismo-dia'),
     })
   }, [deferredMaterias, filteredComisiones, deferredExcluded, ofertaData])
+
+  // Diagnóstico de conflictos cuando total === 0. Se calcula sólo cuando hace falta.
+  const conflictDiagnosis = useMemo(() => {
+    if (total > 0 || deferredMaterias.length === 0) {
+      return { emptyMaterias: [], conflictingPairs: [] as Array<[string, string]> }
+    }
+    return diagnoseConflicts(deferredMaterias, filteredComisiones, {
+      excludeMismoDia: deferredExcluded.has('mismo-dia'),
+    })
+  }, [total, deferredMaterias, filteredComisiones, deferredExcluded])
+
+  // Materias que, si se agregaran, dejarían al planner sin ninguna combinación
+  // válida bajo los filtros/pines actuales. Se muestran en rojo en la sidebar
+  // (siguen siendo seleccionables) para avisarle al usuario.
+  const problematicMaterias = useMemo(() => {
+    const result = new Set<string>()
+    if (!ofertaData) return result
+    if (deferredMaterias.length === 0) return result
+    if (deferredMaterias.length >= MAX_MATERIAS) return result
+    // Si ya estamos en 0 combinaciones, todo cae en la misma bolsa: no marcamos.
+    if (total === 0) return result
+
+    const excludeMismoDia = deferredExcluded.has('mismo-dia')
+    const selectedSet = new Set(deferredMaterias)
+    const seen = new Set<string>()
+
+    for (const c of uniqueComisiones) {
+      const cod = c.codigoMateria
+      if (selectedSet.has(cod) || seen.has(cod)) continue
+      seen.add(cod)
+      const trial = [...deferredMaterias, cod]
+      if (!hasAnyValidCombination(trial, filteredComisiones, { excludeMismoDia })) {
+        result.add(cod)
+      }
+    }
+    return result
+  }, [
+    ofertaData,
+    deferredMaterias,
+    filteredComisiones,
+    deferredExcluded,
+    total,
+    uniqueComisiones,
+  ])
+
+  // Metadata (nombre + cantidad de comisiones) por materia seleccionada, para el helper.
+  const materiaInfoMap = useMemo(() => {
+    const map = new Map<string, { codigo: string; nombre: string; comisionCount: number }>()
+    for (const cod of selectedMaterias) {
+      const comisionesDeMateria = uniqueComisiones.filter(c => c.codigoMateria === cod)
+      const nombre = comisionesDeMateria[0]?.descripcion ?? cod
+      map.set(cod, { codigo: cod, nombre, comisionCount: comisionesDeMateria.length })
+    }
+    return map
+  }, [selectedMaterias, uniqueComisiones])
 
   // Color map: codigoMateria → index in MATERIA_COLORS
   const colorMap = useMemo(() => {
@@ -83,6 +163,21 @@ export default function Home() {
 
   const handleRemoveMateria = useCallback((codigo: string) => {
     setSelectedMaterias(prev => prev.filter(c => c !== codigo))
+    // También quitar cualquier pin de esa materia
+    setPinnedComisiones(prev => {
+      if (prev.size === 0) return prev
+      const prefix = `${codigo}-`
+      let changed = false
+      const next = new Set<string>()
+      for (const id of prev) {
+        if (id.startsWith(prefix)) {
+          changed = true
+          continue
+        }
+        next.add(id)
+      }
+      return changed ? next : prev
+    })
   }, [])
 
   const handleToggleFilter = useCallback((key: FilterKey) => {
@@ -94,13 +189,46 @@ export default function Home() {
     })
   }, [])
 
+  // Fijar/desfijar una comisión. Si se fija una, cualquier otra de la misma
+  // materia queda desfijada automáticamente (sólo una comisión por materia).
+  const handleTogglePin = useCallback(
+    (id: string) => {
+      setPinnedComisiones(prev => {
+        if (prev.has(id)) {
+          const next = new Set(prev)
+          next.delete(id)
+          return next
+        }
+        const match = uniqueComisiones.find(c => comisionId(c) === id)
+        const prefix = match ? `${match.codigoMateria}-` : null
+        const next = new Set<string>()
+        for (const otherId of prev) {
+          if (prefix && otherId.startsWith(prefix)) continue
+          next.add(otherId)
+        }
+        next.add(id)
+        return next
+      })
+    },
+    [uniqueComisiones]
+  )
+
+  const handleClearAllFilters = useCallback(() => {
+    setExcludedFilters(new Set())
+    setPinnedComisiones(new Set())
+  }, [])
+
   const isComputing =
-    deferredMaterias !== selectedMaterias || deferredExcluded !== excludedFilters
+    deferredMaterias !== selectedMaterias ||
+    deferredExcluded !== excludedFilters ||
+    deferredPinned !== pinnedComisiones
 
   const borderColor = isDark ? '#334155' : '#e2e8f0'
   const textColor = isDark ? '#f1f5f9' : '#0f172a'
   const mutedColor = isDark ? '#94a3b8' : '#64748b'
   const bgHeader = isDark ? 'rgba(15,23,42,0.9)' : 'rgba(255,255,255,0.9)'
+
+  const activeFilterCount = excludedFilters.size + pinnedComisiones.size
 
   return (
     <>
@@ -135,7 +263,12 @@ export default function Home() {
           <div className="flex items-center gap-2 shrink-0">
             {ofertaData && (
               <button
-                onClick={() => { setOfertaData(null); setSelectedMaterias([]) }}
+                onClick={() => {
+                  setOfertaData(null)
+                  setSelectedMaterias([])
+                  setPinnedComisiones(new Set())
+                  setExcludedFilters(new Set())
+                }}
                 className="text-xs px-2 py-1 rounded-lg transition-colors"
                 style={{
                   color: mutedColor,
@@ -183,6 +316,7 @@ export default function Home() {
                 isDark={isDark}
                 onAdd={handleAddMateria}
                 onRemove={handleRemoveMateria}
+                problematicMaterias={problematicMaterias}
               />
             </div>
           )}
@@ -198,18 +332,41 @@ export default function Home() {
               <EmptyState isDark={isDark} textColor={textColor} mutedColor={mutedColor} />
             ) : (
               <div className="p-4 flex flex-col gap-4">
-                {/* Filters */}
-                <TurnoFilters
-                  excluded={excludedFilters}
-                  onToggle={handleToggleFilter}
-                  isDark={isDark}
-                  textColor={textColor}
-                  mutedColor={mutedColor}
-                  borderColor={borderColor}
-                />
+                {/* Filters trigger + status bar */}
+                <div className="flex items-center gap-3 flex-wrap">
+                  <button
+                    onClick={() => setFiltersOpen(true)}
+                    className="flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm transition-colors"
+                    style={{
+                      border: `1px solid ${activeFilterCount > 0 ? '#6366f1' : borderColor}`,
+                      background: activeFilterCount > 0
+                        ? (isDark ? '#312e81' : '#eef2ff')
+                        : 'transparent',
+                      color: activeFilterCount > 0
+                        ? (isDark ? '#c7d2fe' : '#4338ca')
+                        : textColor,
+                    }}
+                  >
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
+                    </svg>
+                    Filtros
+                    {activeFilterCount > 0 && (
+                      <span
+                        className="inline-flex items-center justify-center text-xs font-bold rounded-full"
+                        style={{
+                          minWidth: 18,
+                          height: 18,
+                          padding: '0 5px',
+                          background: '#6366f1',
+                          color: '#ffffff',
+                        }}
+                      >
+                        {activeFilterCount}
+                      </span>
+                    )}
+                  </button>
 
-                {/* Status bar */}
-                <div className="flex items-center gap-3">
                   <div className="flex items-center gap-1.5 flex-wrap">
                     {selectedMaterias.map(cod => {
                       const colorIdx = colorMap.get(cod) ?? 0
@@ -225,6 +382,7 @@ export default function Home() {
                       )
                     })}
                   </div>
+
                   <div className="ml-auto shrink-0 flex items-center gap-2">
                     {isComputing && (
                       <svg className="animate-spin" width="14" height="14" viewBox="0 0 24 24" fill="none">
@@ -258,21 +416,24 @@ export default function Home() {
                         colorMap={colorMap}
                         isDark={isDark}
                         index={i}
+                        pinnedComisiones={pinnedComisiones}
+                        onTogglePin={handleTogglePin}
                       />
                     ))}
                   </div>
                 ) : (
                   !isComputing && (
-                    <div className="flex flex-col items-center justify-center py-20 gap-3">
-                      <span className="text-4xl">🚫</span>
-                      <p className="font-semibold" style={{ color: textColor }}>
-                        Sin combinaciones posibles
-                      </p>
-                      <p className="text-sm text-center max-w-xs" style={{ color: mutedColor }}>
-                        No existe ninguna forma de cursar todas las materias seleccionadas sin conflictos de horario.
-                        Probá quitando alguna materia.
-                      </p>
-                    </div>
+                    <NoCombinationsHelper
+                      isDark={isDark}
+                      textColor={textColor}
+                      mutedColor={mutedColor}
+                      colorMap={colorMap}
+                      materias={materiaInfoMap}
+                      emptyMaterias={conflictDiagnosis.emptyMaterias}
+                      conflictingPairs={conflictDiagnosis.conflictingPairs}
+                      allSelected={selectedMaterias}
+                      onRemove={handleRemoveMateria}
+                    />
                   )
                 )}
               </div>
@@ -281,70 +442,28 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Filters modal */}
+      {ofertaData && (
+        <FiltersModal
+          open={filtersOpen}
+          onClose={() => setFiltersOpen(false)}
+          isDark={isDark}
+          excluded={excludedFilters}
+          onToggleExclude={handleToggleFilter}
+          selectedMaterias={selectedMaterias}
+          comisiones={uniqueComisiones}
+          colorMap={colorMap}
+          pinnedComisiones={pinnedComisiones}
+          onTogglePin={handleTogglePin}
+          onClearAll={handleClearAllFilters}
+        />
+      )}
+
       {/* University selector overlay */}
       {!ofertaData && (
         <UniversitySelector onSelect={setOfertaData} isDark={isDark} />
       )}
     </>
-  )
-}
-
-const FILTER_OPTIONS: { key: FilterKey; label: string }[] = [
-  { key: 'mañana', label: 'Mañana' },
-  { key: 'tarde', label: 'Tarde' },
-  { key: 'noche', label: 'Noche' },
-  { key: 'sabado', label: 'Sábado' },
-  { key: 'mismo-dia', label: 'Mismo día' },
-]
-
-function TurnoFilters({
-  excluded, onToggle, isDark, textColor, mutedColor, borderColor,
-}: {
-  excluded: Set<FilterKey>
-  onToggle: (key: FilterKey) => void
-  isDark: boolean
-  textColor: string
-  mutedColor: string
-  borderColor: string
-}) {
-  return (
-    <div className="flex items-center gap-2 flex-wrap">
-      <span className="text-xs font-semibold uppercase tracking-wide" style={{ color: mutedColor }}>
-        Excluir:
-      </span>
-      {FILTER_OPTIONS.map(({ key, label }) => {
-        const active = excluded.has(key)
-        return (
-          <button
-            key={key}
-            onClick={() => onToggle(key)}
-            className="flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm transition-colors"
-            style={{
-              border: `1px solid ${active ? '#6366f1' : borderColor}`,
-              background: active ? (isDark ? '#312e81' : '#eef2ff') : 'transparent',
-              color: active ? (isDark ? '#c7d2fe' : '#4338ca') : textColor,
-            }}
-          >
-            <span
-              className="flex items-center justify-center rounded"
-              style={{
-                width: 16,
-                height: 16,
-                border: `1.5px solid ${active ? '#6366f1' : mutedColor}`,
-                background: active ? '#6366f1' : 'transparent',
-              }}
-            >
-              {active && (
-                <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
-                  <path d="M2.5 6.5L5 9L9.5 3.5" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              )}
-            </span>
-            {label}
-          </button>
-        )
-      })}
-    </div>
   )
 }
 

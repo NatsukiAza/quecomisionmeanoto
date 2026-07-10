@@ -43,6 +43,12 @@
   box-sizing: border-box;
 }
 
+/* Tailwind v4 preflight drops the default pointer cursor on buttons; restore it. */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]) {
+  cursor: pointer;
+}
+
 html {
   height: 100%;
 }

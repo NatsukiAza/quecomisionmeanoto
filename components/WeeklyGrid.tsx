@@ -30,9 +30,19 @@ interface Props {
   /** Maps codigoMateria → color slot index */
   colorMap: Map<string, number>
   isDark: boolean
+  /** IDs de comisiones fijadas (comisionId). Si no se pasa, ninguna está fijada. */
+  pinnedComisiones?: Set<string>
+  /** Callback para fijar/desfijar al tocar el bloque de una comisión. */
+  onTogglePin?: (id: string) => void
 }
 
-export default function WeeklyGrid({ combination, colorMap, isDark }: Props) {
+export default function WeeklyGrid({
+  combination,
+  colorMap,
+  isDark,
+  pinnedComisiones,
+  onTogglePin,
+}: Props) {
   // Always show the full week, Lunes to Sábado (empty days are shown blank).
   const activeDays: string[] = [...ALL_DAYS]
 
@@ -111,21 +121,49 @@ export default function WeeklyGrid({ combination, colorMap, isDark }: Props) {
                 const cornerBg = lightenHex(hex, isDark ? 0.4 : 0.55)
                 const top = (block.inicio - HOUR_START) * PX_PER_HOUR
                 const height = (block.fin - block.inicio) * PX_PER_HOUR
+                const id = comisionId(comision)
+                const pinned = pinnedComisiones?.has(id) ?? false
+                const clickable = !!onTogglePin
+
+                const title = pinned
+                  ? `${comision.descripcion} — Com. ${comision.codComision} — ${comision.modalidad} — ${comision.sede}\nFijada · tocá para desfijar`
+                  : clickable
+                    ? `${comision.descripcion} — Com. ${comision.codComision} — ${comision.modalidad} — ${comision.sede}\nTocá para fijar esta comisión`
+                    : `${comision.descripcion} — Com. ${comision.codComision} — ${comision.modalidad} — ${comision.sede}`
 
                 return (
                   <div
-                    key={`${comisionId(comision)}-${day}`}
-                    className="absolute rounded-md overflow-hidden p-1.5 flex flex-col gap-1"
+                    key={`${id}-${day}`}
+                    role={clickable ? 'button' : undefined}
+                    tabIndex={clickable ? 0 : undefined}
+                    onClick={clickable ? () => onTogglePin!(id) : undefined}
+                    onKeyDown={
+                      clickable
+                        ? (e) => {
+                            if (e.key === 'Enter' || e.key === ' ') {
+                              e.preventDefault()
+                              onTogglePin!(id)
+                            }
+                          }
+                        : undefined
+                    }
+                    className="absolute rounded-md overflow-hidden p-1.5 flex flex-col gap-1 transition-shadow"
                     style={{
                       left: 3,
                       right: 3,
                       top: top + 1,
                       height: height - 2,
                       background: hex,
-                      border: `1px solid ${hex}`,
+                      border: pinned ? `2px solid ${txt}` : `1px solid ${hex}`,
                       color: txt,
+                      cursor: clickable ? 'pointer' : 'default',
+                      boxShadow: pinned
+                        ? (isDark
+                            ? '0 0 0 1px rgba(255,255,255,0.2), 0 2px 8px rgba(0,0,0,0.35)'
+                            : '0 0 0 1px rgba(0,0,0,0.05), 0 2px 6px rgba(99,102,241,0.25)')
+                        : undefined,
                     }}
-                    title={`${comision.descripcion} — Com. ${comision.codComision} — ${comision.modalidad} — ${comision.sede}`}
+                    title={title}
                   >
                     {/* Materia name + time */}
                     <div>
@@ -137,12 +175,28 @@ export default function WeeklyGrid({ combination, colorMap, isDark }: Props) {
                       </p>
                     </div>
 
-                    {/* Modality badge below the name, left-aligned */}
-                    <div
-                      className="self-start rounded px-1 py-0.5 font-semibold"
-                      style={{ background: cornerBg, color: txt, fontSize: 8, lineHeight: 1.1 }}
-                    >
-                      {MODALIDAD_ABBR[comision.modalidad] ?? comision.modalidad}
+                    {/* Badges row: modalidad + FIJADA cuando corresponde */}
+                    <div className="flex items-center gap-1 flex-wrap">
+                      <div
+                        className="rounded px-1 py-0.5 font-semibold"
+                        style={{ background: cornerBg, color: txt, fontSize: 8, lineHeight: 1.1 }}
+                      >
+                        {MODALIDAD_ABBR[comision.modalidad] ?? comision.modalidad}
+                      </div>
+                      {pinned && (
+                        <div
+                          className="rounded px-1 py-0.5 font-bold tracking-wider"
+                          style={{
+                            background: txt,
+                            color: hex,
+                            fontSize: 8,
+                            lineHeight: 1.1,
+                            letterSpacing: '0.05em',
+                          }}
+                        >
+                          FIJADA
+                        </div>
+                      )}
                     </div>
                   </div>
                 )
