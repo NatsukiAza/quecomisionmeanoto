@@ -99,7 +99,7 @@ export default function UniversitySelector({ onSelect, isDark }: Props) {
                 UNLaM — Ingeniería Informática
               </p>
               <p className="text-xs mt-0.5" style={{ color: mutedColor }}>
-                Datos pre-cargados · 1er semestre 2026
+                Datos pre-cargados · 2do cuatrimestre 2026
               </p>
             </div>
             {loading && (

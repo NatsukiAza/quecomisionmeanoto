@@ -14,7 +14,7 @@ export type Comision = {
 export type OfertaData = {
   universidad: string     // "UNLaM"
   carrera: string         // "Ingeniería Informática"
-  periodo: string         // "1er semestre 2026"
+  periodo: string         // "2do cuatrimestre 2026"
   comisiones: Comision[]
 }
 
