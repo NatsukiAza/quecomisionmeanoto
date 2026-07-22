@@ -286,13 +286,14 @@ export default function FiltersModal({
                               </span>
                               <span className="flex-1 min-w-0">
                                 <span className="block font-semibold leading-tight">
-                                  Com. {c.codComision} · {c.dias}
+                                  Com. {c.codComision} · {c.dias || 'Sin horario'}
                                 </span>
                                 <span
                                   className="block leading-tight mt-0.5"
                                   style={{ color: pinned ? undefined : mutedColor }}
                                 >
                                   {c.modalidad} · {c.sede}
+                                  {c.observacion ? ` · ${c.observacion}` : ''}
                                 </span>
                               </span>
                             </button>

@@ -1,7 +1,16 @@
 import type { Comision } from './types'
 
 const DIAS_RE = /(?:Lu|Ma|Mi|Ju|Vi|Sa){1,3}\d{2}a\d{2}/
-const MODALIDADES = ['Sincrónica Teams', 'Semipresencial', 'Presencial', 'Virtual', 'Aula Virtual']
+// Longer names first so "Aula Virtual" wins over "Virtual", etc.
+const MODALIDADES = [
+  'Sincrónica Teams',
+  'Semipresencial',
+  'A Distancia',
+  'Recursantes',
+  'Aula Virtual',
+  'Presencial',
+  'Virtual',
+]
 const INCOMPLETE_SEDES = ['San', 'Buenos']
 
 function isNoiseLine(line: string): boolean {
@@ -15,6 +24,60 @@ function isNoiseLine(line: string): boolean {
   if (/^(Código|Descripción|Cod\.?|Comisión|Turno|Días|Modalidad|Sede|Observacion)\s*$/.test(t)) return true
   if (/^\d+\/\d+\s*$/.test(t)) return true
   return false
+}
+
+function extractModalidad(after: string): { modalidad: string; observacion?: string } {
+  const trimmed = after.trim()
+  if (!trimmed) return { modalidad: 'Presencial' }
+
+  for (const m of MODALIDADES) {
+    const ml = m.toLowerCase()
+    const lower = trimmed.toLowerCase()
+    if (!lower.startsWith(ml)) continue
+    const boundary = lower[ml.length]
+    if (boundary !== undefined && boundary !== ' ' && boundary !== '\t') continue
+
+    let rest = trimmed.slice(m.length).trim()
+    // PDF sometimes repeats the modalidad in Turno + Modalidad columns:
+    // "A distancia A Distancia"
+    if (rest.toLowerCase() === ml) rest = ''
+    else if (rest.toLowerCase().startsWith(ml)) {
+      const b2 = rest.toLowerCase()[ml.length]
+      if (b2 === undefined || b2 === ' ' || b2 === '\t') {
+        rest = rest.slice(m.length).trim()
+      }
+    }
+    return { modalidad: m, observacion: rest || undefined }
+  }
+
+  return { modalidad: 'Presencial', observacion: trimmed }
+}
+
+function lookAheadSede(lines: string[], from: number): string {
+  const sedeParts: string[] = []
+  let j = from
+  while (j < lines.length) {
+    const nxt = lines[j]
+    if (DIAS_RE.test(nxt) || /^\d{4}\s/.test(nxt)) break
+    if (/^[A-ZÁÉÍÓÚÑa-záéíóúñ][a-záéíóúñA-ZÁÉÍÓÚÑ\s]+$/.test(nxt) && nxt.length <= 25) {
+      sedeParts.push(nxt)
+      j++
+      if (!INCOMPLETE_SEDES.includes(sedeParts.join(' '))) break
+    } else {
+      break
+    }
+  }
+  return sedeParts.join(' ') || 'San Justo'
+}
+
+function startsWithModalidad(text: string): boolean {
+  const lower = text.trim().toLowerCase()
+  return MODALIDADES.some(m => {
+    const ml = m.toLowerCase()
+    if (!lower.startsWith(ml)) return false
+    const next = lower[ml.length]
+    return next === undefined || next === ' ' || next === '\t'
+  })
 }
 
 export function parseComisionesFromText(text: string): Comision[] {
@@ -50,34 +113,8 @@ export function parseComisionesFromText(text: string): Comision[] {
         }
       }
 
-      let modalidad = 'Presencial'
-      let observacion: string | undefined
-      for (const m of MODALIDADES) {
-        if (after.toLowerCase().startsWith(m.toLowerCase())) {
-          modalidad = m
-          const rest = after.slice(m.length).trim()
-          if (rest) observacion = rest
-          break
-        }
-      }
-      if (modalidad === 'Presencial' && !MODALIDADES.some(m => after.toLowerCase().startsWith(m.toLowerCase()))) {
-        if (after) observacion = after
-      }
-
-      // Lookahead for sede
-      const sedeParts: string[] = []
-      let j = i + 1
-      while (j < lines.length) {
-        const nxt = lines[j]
-        if (DIAS_RE.test(nxt) || /^\d{4}\s/.test(nxt)) break
-        if (/^[A-ZÁÉÍÓÚÑa-záéíóúñ][a-záéíóúñA-ZÁÉÍÓÚÑ\s]+$/.test(nxt) && nxt.length <= 25) {
-          sedeParts.push(nxt)
-          j++
-          if (!INCOMPLETE_SEDES.includes(sedeParts.join(' '))) break
-        } else {
-          break
-        }
-      }
+      const { modalidad, observacion } = extractModalidad(after)
+      const sede = lookAheadSede(lines, i + 1)
 
       if (!currentCodigo || !codComision) continue
 
@@ -87,17 +124,43 @@ export function parseComisionesFromText(text: string): Comision[] {
         codComision,
         dias,
         modalidad,
-        sede: sedeParts.join(' ') || 'San Justo',
+        sede,
       }
       if (observacion) comision.observacion = observacion
       comisiones.push(comision)
 
     } else {
+      // Commission without fixed schedule, e.g. "6900 A distancia A Distancia"
+      const sinHorario = line.match(/^(\d{4})\s+(.+)$/)
+      if (
+        sinHorario &&
+        currentCodigo &&
+        startsWithModalidad(sinHorario[2]) &&
+        !/^[A-ZÁÉÍÓÚÑ].+\s+\d{4}\s+/.test(line) // not a materia+comisión header row
+      ) {
+        nameMode = false
+        const codComision = sinHorario[1]
+        const { modalidad, observacion } = extractModalidad(sinHorario[2])
+        const sede = lookAheadSede(lines, i + 1)
+
+        const comision: Comision = {
+          codigoMateria: currentCodigo,
+          descripcion: currentNombre,
+          codComision,
+          dias: '',
+          modalidad,
+          sede,
+        }
+        if (observacion) comision.observacion = observacion
+        comisiones.push(comision)
+        continue
+      }
+
       const isComisionCodeLine =
         /^\d{4}\s+(?:Lu|Ma|Mi|Ju|Vi|Sa)/.test(line) && DIAS_RE.test(line)
 
       const nm = !isComisionCodeLine && line.match(/^(\d{4})\s+(.+)/)
-      if (nm) {
+      if (nm && !startsWithModalidad(nm[2])) {
         currentCodigo = nm[1]
         currentNombre = nm[2].trim()
         nameMode = true
