@@ -120,9 +120,8 @@
       "descripcion": "INGLES NIVEL I",
       "codComision": "5900",
       "dias": "Vi19a23",
-      "modalidad": "Presencial",
-      "sede": "San Justo",
-      "observacion": "Recursantes"
+      "modalidad": "Recursantes",
+      "sede": "San Justo"
     },
     {
       "codigoMateria": "0901",
@@ -273,9 +272,8 @@
       "descripcion": "INGLES NIVEL II",
       "codComision": "5300",
       "dias": "Vi08a12",
-      "modalidad": "Presencial",
-      "sede": "San Justo",
-      "observacion": "Recursantes"
+      "modalidad": "Recursantes",
+      "sede": "San Justo"
     },
     {
       "codigoMateria": "0902",
@@ -418,9 +416,8 @@
       "descripcion": "INGLES NIVEL III",
       "codComision": "3500",
       "dias": "Mi16a18",
-      "modalidad": "Presencial",
-      "sede": "San Justo",
-      "observacion": "Recursantes"
+      "modalidad": "Recursantes",
+      "sede": "San Justo"
     },
     {
       "codigoMateria": "0903",
@@ -555,9 +552,8 @@
       "descripcion": "INGLES NIVEL IV",
       "codComision": "1500",
       "dias": "Lu16a18",
-      "modalidad": "Presencial",
-      "sede": "San Justo",
-      "observacion": "Recursantes"
+      "modalidad": "Recursantes",
+      "sede": "San Justo"
     },
     {
       "codigoMateria": "0904",
@@ -856,6 +852,14 @@
       "sede": "San Justo"
     },
     {
+      "codigoMateria": "0911",
+      "descripcion": "COMPUTACION NIVEL I",
+      "codComision": "6900",
+      "dias": "",
+      "modalidad": "A Distancia",
+      "sede": "San Justo"
+    },
+    {
       "codigoMateria": "0912",
       "descripcion": "COMPUTACION NIVEL II",
       "codComision": "1300",
@@ -981,6 +985,14 @@
       "codComision": "6300",
       "dias": "Sa08a12",
       "modalidad": "Presencial",
+      "sede": "San Justo"
+    },
+    {
+      "codigoMateria": "0912",
+      "descripcion": "COMPUTACION NIVEL II",
+      "codComision": "6900",
+      "dias": "",
+      "modalidad": "A Distancia",
       "sede": "San Justo"
     },
     {
@@ -1143,9 +1155,8 @@
       "descripcion": "PROGRAMACION INICIAL",
       "codComision": "4900",
       "dias": "Ju19a23",
-      "modalidad": "Presencial",
-      "sede": "San Justo",
-      "observacion": "Recursantes"
+      "modalidad": "Recursantes",
+      "sede": "San Justo"
     },
     {
       "codigoMateria": "3624",
@@ -1763,9 +1774,8 @@
       "descripcion": "ARQUITECTURA DE COMPUTADORAS",
       "codComision": "2600",
       "dias": "Ma14a18",
-      "modalidad": "Presencial",
-      "sede": "San Justo",
-      "observacion": "Recursantes"
+      "modalidad": "Recursantes",
+      "sede": "San Justo"
     },
     {
       "codigoMateria": "3638",
@@ -2292,9 +2302,8 @@
       "descripcion": "PRACTICA PROFESIONAL SUPERVISADA",
       "codComision": "5600",
       "dias": "Vi14a18",
-      "modalidad": "Presencial",
-      "sede": "San Justo",
-      "observacion": "A Distancia"
+      "modalidad": "A Distancia",
+      "sede": "San Justo"
     },
     {
       "codigoMateria": "3676",

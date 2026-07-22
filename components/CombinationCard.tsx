@@ -49,7 +49,7 @@ export default function CombinationCard({
                 key={comisionId(c)}
                 className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium"
                 style={chipStyle(colorIdx, isDark)}
-                title={`${c.descripcion} — com. ${c.codComision} — ${c.dias} — ${c.modalidad}`}
+                title={`${c.descripcion} — com. ${c.codComision} — ${c.dias || 'Sin horario'} — ${c.modalidad}`}
               >
                 {c.descripcion}
               </span>
@@ -66,6 +66,27 @@ export default function CombinationCard({
         pinnedComisiones={pinnedComisiones}
         onTogglePin={onTogglePin}
       />
+
+      {/* Comisiones sin horario fijo (p.ej. A Distancia) */}
+      {combination.some((c) => !c.dias) && (
+        <div className="flex flex-wrap gap-1.5">
+          {combination
+            .filter((c) => !c.dias)
+            .map((c) => {
+              const colorIdx = colorMap.get(c.codigoMateria) ?? 0
+              return (
+                <span
+                  key={comisionId(c)}
+                  className="inline-flex items-center px-2 py-1 rounded text-xs"
+                  style={chipStyle(colorIdx, isDark)}
+                  title={`${c.descripcion} — com. ${c.codComision} — ${c.modalidad} — ${c.sede}`}
+                >
+                  {c.descripcion}: Com. {c.codComision} · {c.modalidad} (sin horario)
+                </span>
+              )
+            })}
+        </div>
+      )}
     </div>
   )
 }

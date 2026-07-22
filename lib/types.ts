@@ -6,7 +6,7 @@ export type Comision = {
   // Single day: "Lu08a12" = Lunes 08-12
   // Multi-day:  "LuVi12a14" = Lunes y Viernes 12-14
   dias: string
-  modalidad: string       // "Presencial" | "Semipresencial" | "Sincrónica Teams" | "Virtual"
+  modalidad: string       // "Presencial" | "Semipresencial" | "Sincrónica Teams" | "Virtual" | "A Distancia" | "Recursantes"
   sede: string            // "San Justo" | "Ituzaingó"
   observacion?: string
 }

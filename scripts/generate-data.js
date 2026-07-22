@@ -5,7 +5,15 @@ const { PDFParse } = require('pdf-parse')
 
 // Matches single or multi-day patterns: "Lu08a12", "LuVi12a14", "LuMiVi08a12"
 const DIAS_RE = /(?:Lu|Ma|Mi|Ju|Vi|Sa){1,3}\d{2}a\d{2}/
-const MODALIDADES = ['Sincrónica Teams', 'Semipresencial', 'Presencial', 'Virtual', 'Aula Virtual']
+const MODALIDADES = [
+  'Sincrónica Teams',
+  'Semipresencial',
+  'A Distancia',
+  'Recursantes',
+  'Aula Virtual',
+  'Presencial',
+  'Virtual',
+]
 
 function cleanCell(val) {
   if (!val || typeof val !== 'string') return ''
@@ -14,10 +22,45 @@ function cleanCell(val) {
 }
 
 function extractModalidad(raw) {
+  const trimmed = (raw || '').trim()
+  if (!trimmed) return { modalidad: 'Presencial' }
+
   for (const m of MODALIDADES) {
-    if (raw.toLowerCase().includes(m.toLowerCase())) return m
+    const ml = m.toLowerCase()
+    const lower = trimmed.toLowerCase()
+    if (!lower.startsWith(ml)) continue
+    const boundary = lower[ml.length]
+    if (boundary !== undefined && boundary !== ' ' && boundary !== '\t') continue
+
+    let rest = trimmed.slice(m.length).trim()
+    if (rest.toLowerCase() === ml) rest = ''
+    else if (rest.toLowerCase().startsWith(ml)) {
+      const b2 = rest.toLowerCase()[ml.length]
+      if (b2 === undefined || b2 === ' ' || b2 === '\t') {
+        rest = rest.slice(m.length).trim()
+      }
+    }
+    return { modalidad: m, observacion: rest || undefined }
   }
-  return 'Presencial'
+
+  // Exact cell match (table cells often hold modalidad alone)
+  for (const m of MODALIDADES) {
+    if (trimmed.toLowerCase() === m.toLowerCase()) {
+      return { modalidad: m }
+    }
+  }
+
+  return { modalidad: 'Presencial', observacion: trimmed }
+}
+
+function startsWithModalidad(text) {
+  const lower = (text || '').trim().toLowerCase()
+  return MODALIDADES.some(m => {
+    const ml = m.toLowerCase()
+    if (!lower.startsWith(ml)) return false
+    const next = lower[ml.length]
+    return next === undefined || next === ' ' || next === '\t'
+  })
 }
 
 /**
@@ -38,16 +81,41 @@ function parseTableRows(rows) {
     // But indices may vary — find the Días column by matching the dias pattern
     const diasIdx = cells.findIndex(c => DIAS_RE.test(c))
     if (diasIdx === -1) {
-      // No dias in this row — might be a materia header row or header/footer
+      // No dias — either materia header, or comisión sin horario (A Distancia)
+      const joined = cells.join(' ').trim()
+      const sinHorario = joined.match(/^(\d{4})\s+(.+)$/)
+      if (sinHorario && currentCodigo && startsWithModalidad(sinHorario[2])) {
+        const { modalidad, observacion } = extractModalidad(sinHorario[2])
+        let sede = 'San Justo'
+        for (const cell of cells) {
+          if (/^(San Justo|Ituzaingó|Ituzaingo|Buenos Aires)$/i.test(cell)) {
+            sede = cell.replace(/\s+/g, ' ').trim()
+            break
+          }
+        }
+        /** @type {import('../lib/types').Comision} */
+        const comision = {
+          codigoMateria: currentCodigo,
+          descripcion: currentNombre,
+          codComision: sinHorario[1],
+          dias: '',
+          modalidad,
+          sede,
+        }
+        if (observacion) comision.observacion = observacion
+        comisiones.push(comision)
+        continue
+      }
+
       // Try to find materia code (4-digit number)
-      const codeMatch = cells.join(' ').match(/^\s*(\d{4})\s+([A-ZÁÉÍÓÚÑ].+)/)
-      if (codeMatch) {
+      const codeMatch = joined.match(/^\s*(\d{4})\s+([A-ZÁÉÍÓÚÑ].+)/)
+      if (codeMatch && !startsWithModalidad(codeMatch[2])) {
         currentCodigo = codeMatch[1]
         currentNombre = codeMatch[2].trim()
       } else {
         // Check if any cell has a 4-digit code and the next cell has a materia name
         for (let i = 0; i < cells.length - 1; i++) {
-          if (/^\d{4}$/.test(cells[i]) && /^[A-ZÁÉÍÓÚÑ]/.test(cells[i + 1])) {
+          if (/^\d{4}$/.test(cells[i]) && /^[A-ZÁÉÍÓÚÑ]/.test(cells[i + 1]) && !startsWithModalidad(cells[i + 1])) {
             currentCodigo = cells[i]
             currentNombre = cells[i + 1]
             break
@@ -72,7 +140,7 @@ function parseTableRows(rows) {
     for (let i = 0; i < diasIdx - 1; i++) {
       if (/^\d{4}$/.test(cells[i].trim()) && cells[i].trim() !== codComision) {
         const possibleName = cells[i + 1]
-        if (/^[A-ZÁÉÍÓÚÑ]/.test(possibleName)) {
+        if (/^[A-ZÁÉÍÓÚÑ]/.test(possibleName) && !startsWithModalidad(possibleName)) {
           currentCodigo = cells[i].trim()
           currentNombre = possibleName
           break
@@ -81,9 +149,8 @@ function parseTableRows(rows) {
     }
 
     // Modalidad is after dias
-    const modalidad = diasIdx < cells.length - 1
-      ? extractModalidad(cells[diasIdx + 1])
-      : 'Presencial'
+    const modalidadRaw = diasIdx < cells.length - 1 ? cells[diasIdx + 1] : ''
+    const { modalidad, observacion: obsFromModalidad } = extractModalidad(modalidadRaw)
 
     // Sede is 2 columns after dias (or wherever it appears)
     let sede = 'San Justo'
@@ -91,12 +158,13 @@ function parseTableRows(rows) {
       sede = cells[diasIdx + 2].replace(/\s+/g, ' ').trim() || 'San Justo'
     }
 
-    // Observacion is last column
-    const observacion = cells[cells.length - 1] &&
-      cells[cells.length - 1] !== sede &&
-      cells[cells.length - 1] !== modalidad
-      ? cells[cells.length - 1]
-      : undefined
+    // Observacion is last column (when distinct from sede/modalidad)
+    const last = cells[cells.length - 1]
+    const observacion = last &&
+      last !== sede &&
+      last.toLowerCase() !== modalidad.toLowerCase()
+      ? last
+      : obsFromModalidad
 
     if (!currentCodigo || !codComision) continue
 
@@ -167,19 +235,7 @@ function parseRawText(text) {
         }
       }
 
-      let modalidad = 'Presencial'
-      let observacion = undefined
-      for (const m of MODALIDADES) {
-        if (after.toLowerCase().startsWith(m.toLowerCase())) {
-          modalidad = m
-          const rest = after.slice(m.length).trim()
-          if (rest) observacion = rest
-          break
-        }
-      }
-      if (modalidad === 'Presencial' && !MODALIDADES.some(m => after.toLowerCase().startsWith(m.toLowerCase()))) {
-        if (after) observacion = after
-      }
+      const { modalidad, observacion } = extractModalidad(after)
 
       // Lookahead for sede
       const sedeParts = []
@@ -196,7 +252,7 @@ function parseRawText(text) {
 
       const sede = sedeParts.join(' ') || 'San Justo'
 
-      if (!currentCodigo || !codComision) { i++; continue }
+      if (!currentCodigo || !codComision) continue
 
       const comision = {
         codigoMateria: currentCodigo,
@@ -210,12 +266,41 @@ function parseRawText(text) {
       comisiones.push(comision)
 
     } else {
+      // Commission without fixed schedule, e.g. "6900 A distancia A Distancia"
+      const sinHorario = line.match(/^(\d{4})\s+(.+)$/)
+      if (sinHorario && currentCodigo && startsWithModalidad(sinHorario[2])) {
+        nameMode = false
+        const { modalidad, observacion } = extractModalidad(sinHorario[2])
+        const sedeParts = []
+        let j = i + 1
+        while (j < lines.length) {
+          const nxt = lines[j]
+          if (DIAS_RE.test(nxt) || /^\d{4}\s/.test(nxt)) break
+          if (/^[A-ZÁÉÍÓÚÑa-záéíóúñ][a-záéíóúñA-ZÁÉÍÓÚÑ\s]+$/.test(nxt) && nxt.length <= 25) {
+            sedeParts.push(nxt)
+            j++
+            if (!INCOMPLETE_SEDES.includes(sedeParts.join(' '))) break
+          } else break
+        }
+        const comision = {
+          codigoMateria: currentCodigo,
+          descripcion: currentNombre,
+          codComision: sinHorario[1],
+          dias: '',
+          modalidad,
+          sede: sedeParts.join(' ') || 'San Justo',
+        }
+        if (observacion) comision.observacion = observacion
+        comisiones.push(comision)
+        continue
+      }
+
       // A line like "7175 LuVi12a14 ..." starts with 4 digits but it's a comision where
       // the dias field begins with day abbreviations right after the code. Detect this.
       const isComisionCodeLine = /^\d{4}\s+(?:Lu|Ma|Mi|Ju|Vi|Sa)/.test(line) && DIAS_RE.test(line)
 
       const nm = !isComisionCodeLine && line.match(/^(\d{4})\s+(.+)/)
-      if (nm) {
+      if (nm && !startsWithModalidad(nm[2])) {
         currentCodigo = nm[1]
         currentNombre = nm[2].trim()
         nameMode = true
@@ -282,9 +367,10 @@ async function main() {
     console.log('Table extraction failed:', e.message)
   }
 
-  // Fallback to raw text if table extraction didn't work well
-  if (comisiones.length < 10) {
-    console.log('Falling back to raw text extraction...')
+  // Fallback / complement with raw text — table extraction often drops
+  // comisiones sin horario fijo (p.ej. "A Distancia").
+  {
+    console.log('Running raw text extraction...')
     const textParser = new PDFParse({ data: buffer })
     const textResult = await textParser.getText()
     await textParser.destroy()
@@ -292,8 +378,28 @@ async function main() {
     fs.writeFileSync(path.join(__dirname, 'debug-raw.txt'), textResult.text, 'utf8')
     console.log('Raw text saved to scripts/debug-raw.txt')
 
-    comisiones = parseRawText(textResult.text)
-    usedMethod = 'text'
+    const textComisiones = parseRawText(textResult.text)
+    if (comisiones.length < 10) {
+      comisiones = textComisiones
+      usedMethod = 'text'
+    } else {
+      // Merge: keep table rows, add any text-only comisiones (esp. sin horario)
+      const seen = new Set(
+        comisiones.map(c =>
+          `${c.codigoMateria}-${c.codComision}-${c.dias}-${c.modalidad}-${c.sede}`
+        )
+      )
+      let added = 0
+      for (const c of textComisiones) {
+        const id = `${c.codigoMateria}-${c.codComision}-${c.dias}-${c.modalidad}-${c.sede}`
+        if (!seen.has(id)) {
+          comisiones.push(c)
+          seen.add(id)
+          added++
+        }
+      }
+      usedMethod = added > 0 ? `table+text(+${added})` : 'table'
+    }
   }
 
   // Group by materia for reporting

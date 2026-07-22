@@ -22,6 +22,8 @@ const MODALIDAD_ABBR: Record<string, string> = {
   'Sincrónica Teams': 'Sincrónica',
   'Virtual': 'Virtual',
   'Aula Virtual': 'Aula Virt.',
+  'A Distancia': 'A Distancia',
+  'Recursantes': 'Recursantes',
 }
 
 interface Props {
