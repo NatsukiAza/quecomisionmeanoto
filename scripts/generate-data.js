@@ -83,9 +83,10 @@ function parseTableRows(rows) {
     if (diasIdx === -1) {
       // No dias — either materia header, or comisión sin horario (A Distancia)
       const joined = cells.join(' ').trim()
-      const sinHorario = joined.match(/^(\d{4})\s+(.+)$/)
-      if (sinHorario && currentCodigo && startsWithModalidad(sinHorario[2])) {
-        const { modalidad, observacion } = extractModalidad(sinHorario[2])
+      // Table row without dias: "6900 A distancia Recursantes" etc.
+      const sinHorarioMatch = joined.match(/^(\d{4})\s+A\s+distancia\s+(.+)$/i)
+      if (sinHorarioMatch && currentCodigo) {
+        const { modalidad, observacion } = extractModalidad(sinHorarioMatch[2])
         let sede = 'San Justo'
         for (const cell of cells) {
           if (/^(San Justo|Ituzaingó|Ituzaingo|Buenos Aires)$/i.test(cell)) {
@@ -97,7 +98,7 @@ function parseTableRows(rows) {
         const comision = {
           codigoMateria: currentCodigo,
           descripcion: currentNombre,
-          codComision: sinHorario[1],
+          codComision: sinHorarioMatch[1],
           dias: '',
           modalidad,
           sede,
@@ -266,9 +267,11 @@ function parseRawText(text) {
       comisiones.push(comision)
 
     } else {
-      // Commission without fixed schedule, e.g. "6900 A distancia A Distancia"
-      const sinHorario = line.match(/^(\d{4})\s+(.+)$/)
-      if (sinHorario && currentCodigo && startsWithModalidad(sinHorario[2])) {
+      // Sin horario fijo: Turno/Días = "A distancia", luego la modalidad real
+      //   "6900 A distancia A Distancia"
+      //   "6900 A distancia Recursantes"
+      const sinHorario = line.match(/^(\d{4})\s+A\s+distancia\s+(.+)$/i)
+      if (sinHorario && currentCodigo) {
         nameMode = false
         const { modalidad, observacion } = extractModalidad(sinHorario[2])
         const sedeParts = []

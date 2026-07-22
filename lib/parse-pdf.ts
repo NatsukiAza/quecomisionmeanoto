@@ -130,14 +130,12 @@ export function parseComisionesFromText(text: string): Comision[] {
       comisiones.push(comision)
 
     } else {
-      // Commission without fixed schedule, e.g. "6900 A distancia A Distancia"
-      const sinHorario = line.match(/^(\d{4})\s+(.+)$/)
-      if (
-        sinHorario &&
-        currentCodigo &&
-        startsWithModalidad(sinHorario[2]) &&
-        !/^[A-ZÁÉÍÓÚÑ].+\s+\d{4}\s+/.test(line) // not a materia+comisión header row
-      ) {
+      // Sin horario fijo: en el PDF el Turno/Días viene como "A distancia"
+      // y después va la modalidad real, p.ej.:
+      //   "6900 A distancia A Distancia"
+      //   "6900 A distancia Recursantes"
+      const sinHorario = line.match(/^(\d{4})\s+A\s+distancia\s+(.+)$/i)
+      if (sinHorario && currentCodigo) {
         nameMode = false
         const codComision = sinHorario[1]
         const { modalidad, observacion } = extractModalidad(sinHorario[2])
