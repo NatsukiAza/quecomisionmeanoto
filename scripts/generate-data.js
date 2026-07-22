@@ -323,7 +323,7 @@ function parseRawText(text) {
 }
 
 async function main() {
-  const pdfPath = path.join(process.cwd(), 'public', 'oferta_2 1.pdf')
+  const pdfPath = path.join(process.cwd(), 'public', 'oferta 2026 2c Ing. Informatica.pdf')
   if (!fs.existsSync(pdfPath)) {
     console.error('PDF not found at:', pdfPath)
     process.exit(1)
@@ -413,7 +413,7 @@ async function main() {
   const output = {
     universidad: 'UNLaM',
     carrera: 'Ingeniería Informática',
-    periodo: '1er semestre 2026',
+    periodo: '2do cuatrimestre 2026',
     comisiones,
   }
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import type { OfertaData } from '@/lib/types'
 
 interface Props {
@@ -11,7 +11,6 @@ interface Props {
 export default function UniversitySelector({ onSelect, isDark }: Props) {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const fileRef = useRef<HTMLInputElement>(null)
 
   const bgOverlay = isDark ? 'rgba(0,0,0,0.7)' : 'rgba(0,0,0,0.4)'
   const bgCard = isDark ? '#1e293b' : '#ffffff'
@@ -34,37 +33,6 @@ export default function UniversitySelector({ onSelect, isDark }: Props) {
     }
   }
 
-  async function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
-    const file = e.target.files?.[0]
-    if (!file) return
-    if (!file.name.endsWith('.pdf')) {
-      setError('Por favor subí un archivo PDF')
-      return
-    }
-
-    setLoading(true)
-    setError(null)
-    try {
-      const form = new FormData()
-      form.append('file', file)
-      const res = await fetch('/api/parse-pdf', { method: 'POST', body: form })
-      if (!res.ok) {
-        const body = await res.json().catch(() => ({}))
-        throw new Error(body.error ?? 'Error al procesar el PDF')
-      }
-      const data: OfertaData = await res.json()
-      if (data.comisiones.length === 0) {
-        throw new Error('No se encontraron comisiones en el PDF. Verificá que sea el formato correcto.')
-      }
-      onSelect(data)
-    } catch (e) {
-      setError(e instanceof Error ? e.message : 'Error desconocido')
-    } finally {
-      setLoading(false)
-      if (fileRef.current) fileRef.current.value = ''
-    }
-  }
-
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
@@ -80,9 +48,26 @@ export default function UniversitySelector({ onSelect, isDark }: Props) {
       >
         {/* Header */}
         <div className="text-center">
-          <h1 className="text-2xl font-bold mb-1" style={{ color: textColor }}>
-            ¿A qué comisión me anoto?
-          </h1>
+          <div className="flex items-center justify-center gap-2 flex-wrap mb-1">
+            <h1 className="text-2xl font-bold" style={{ color: textColor }}>
+              ¿A qué comisión me anoto?
+            </h1>
+            <span className="text-sm" style={{ color: mutedColor }}>
+              Santino Azarola
+            </span>
+            <a
+              href="https://www.linkedin.com/in/santino-azarola/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn de Santino Azarola"
+              className="inline-flex items-center transition-opacity hover:opacity-80"
+              style={{ color: mutedColor }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+          </div>
           <p className="text-sm" style={{ color: mutedColor }}>
             Elegí tu universidad para ver las comisiones disponibles
           </p>
@@ -114,7 +99,7 @@ export default function UniversitySelector({ onSelect, isDark }: Props) {
                 UNLaM — Ingeniería Informática
               </p>
               <p className="text-xs mt-0.5" style={{ color: mutedColor }}>
-                Datos pre-cargados · 1er semestre 2026
+                Datos pre-cargados · 2do cuatrimestre 2026
               </p>
             </div>
             {loading && (
@@ -133,32 +118,16 @@ export default function UniversitySelector({ onSelect, isDark }: Props) {
           <div className="flex-1 h-px" style={{ background: borderColor }} />
         </div>
 
-        {/* PDF upload option */}
+        {/* PDF upload option — próximamente */}
         <div>
-          <input
-            ref={fileRef}
-            type="file"
-            accept=".pdf"
-            className="hidden"
-            onChange={handleFileChange}
-            disabled={loading}
-          />
           <button
-            onClick={() => fileRef.current?.click()}
-            disabled={loading}
-            className="w-full rounded-xl p-5 text-left transition-all hover:scale-[1.01]"
+            type="button"
+            disabled
+            aria-disabled="true"
+            className="w-full rounded-xl p-5 text-left opacity-50 cursor-not-allowed"
             style={{
               background: isDark ? '#0f172a' : '#f8fafc',
               border: `2px dashed ${isDark ? '#334155' : '#cbd5e1'}`,
-              cursor: loading ? 'wait' : 'pointer',
-            }}
-            onMouseEnter={e => {
-              if (!loading) {
-                (e.currentTarget as HTMLButtonElement).style.borderColor = '#6366f1'
-              }
-            }}
-            onMouseLeave={e => {
-              (e.currentTarget as HTMLButtonElement).style.borderColor = isDark ? '#334155' : '#cbd5e1'
             }}
           >
             <div className="flex items-center gap-3">
@@ -168,7 +137,7 @@ export default function UniversitySelector({ onSelect, isDark }: Props) {
                   Subir PDF de otra universidad
                 </p>
                 <p className="text-xs mt-0.5" style={{ color: mutedColor }}>
-                  Oferta de comisiones en PDF · formato UNLaM compatible
+                  Próximamente
                 </p>
               </div>
             </div>
