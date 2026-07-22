@@ -65,7 +65,8 @@ export default function WeeklyGrid({
             className="flex-1 text-center font-medium pb-1"
             style={{ color: headColor, fontSize: 11 }}
           >
-            {DAY_LABELS[day]}
+            <span className="sm:hidden">{day}</span>
+            <span className="hidden sm:inline">{DAY_LABELS[day]}</span>
           </div>
         ))}
       </div>
@@ -149,7 +150,7 @@ export default function WeeklyGrid({
                           }
                         : undefined
                     }
-                    className="absolute rounded-md overflow-hidden p-1.5 flex flex-col gap-1 transition-shadow"
+                    className="absolute rounded-md overflow-hidden p-1 sm:p-1.5 flex flex-col gap-0.5 sm:gap-1 transition-shadow"
                     style={{
                       left: 3,
                       right: 3,
@@ -167,38 +168,64 @@ export default function WeeklyGrid({
                     }}
                     title={title}
                   >
-                    {/* Materia name + time */}
-                    <div>
-                      <p className="font-semibold leading-tight" style={{ fontSize: 10 }}>
-                        {comision.descripcion}
-                      </p>
-                      <p className="leading-tight mt-0.5" style={{ fontSize: 8, opacity: 0.75 }}>
+                    {/* Mobile: sin nombre — se identifica por color + chips del header */}
+                    <div className="sm:hidden flex flex-col gap-0.5 min-h-0 overflow-hidden">
+                      <p className="font-semibold leading-tight truncate" style={{ fontSize: 9 }}>
                         Com. {comision.codComision} · {String(block.inicio).padStart(2, '0')}–{String(block.fin).padStart(2, '0')}h
                       </p>
+                      <div className="flex items-center gap-0.5 min-w-0">
+                        <div
+                          className="rounded px-0.5 py-px font-semibold truncate"
+                          style={{ background: cornerBg, color: txt, fontSize: 7, lineHeight: 1.1 }}
+                        >
+                          {MODALIDAD_ABBR[comision.modalidad] ?? comision.modalidad}
+                        </div>
+                        {pinned && (
+                          <span
+                            className="inline-flex items-center justify-center rounded shrink-0"
+                            style={{ background: txt, color: hex, width: 12, height: 12 }}
+                            aria-label="Fijada"
+                          >
+                            <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                              <path d="M16 12V4h1V2H7v2h1v8l-2 2v2h5.2v6h1.6v-6H18v-2l-2-2z" />
+                            </svg>
+                          </span>
+                        )}
+                      </div>
                     </div>
 
-                    {/* Badges row: modalidad + FIJADA cuando corresponde */}
-                    <div className="flex items-center gap-1 flex-wrap">
-                      <div
-                        className="rounded px-1 py-0.5 font-semibold"
-                        style={{ background: cornerBg, color: txt, fontSize: 8, lineHeight: 1.1 }}
-                      >
-                        {MODALIDAD_ABBR[comision.modalidad] ?? comision.modalidad}
+                    {/* Desktop: layout completo con nombre */}
+                    <div className="hidden sm:flex flex-col gap-1 min-h-0 overflow-hidden">
+                      <div>
+                        <p className="font-semibold leading-tight" style={{ fontSize: 10 }}>
+                          {comision.descripcion}
+                        </p>
+                        <p className="leading-tight mt-0.5" style={{ fontSize: 8, opacity: 0.75 }}>
+                          Com. {comision.codComision} · {String(block.inicio).padStart(2, '0')}–{String(block.fin).padStart(2, '0')}h
+                        </p>
                       </div>
-                      {pinned && (
+                      <div className="flex items-center gap-1 flex-wrap">
                         <div
-                          className="rounded px-1 py-0.5 font-bold tracking-wider"
-                          style={{
-                            background: txt,
-                            color: hex,
-                            fontSize: 8,
-                            lineHeight: 1.1,
-                            letterSpacing: '0.05em',
-                          }}
+                          className="rounded px-1 py-0.5 font-semibold"
+                          style={{ background: cornerBg, color: txt, fontSize: 8, lineHeight: 1.1 }}
                         >
-                          FIJADA
+                          {MODALIDAD_ABBR[comision.modalidad] ?? comision.modalidad}
                         </div>
-                      )}
+                        {pinned && (
+                          <div
+                            className="rounded px-1 py-0.5 font-bold tracking-wider"
+                            style={{
+                              background: txt,
+                              color: hex,
+                              fontSize: 8,
+                              lineHeight: 1.1,
+                              letterSpacing: '0.05em',
+                            }}
+                          >
+                            FIJADA
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                 )

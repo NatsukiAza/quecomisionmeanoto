@@ -26,6 +26,7 @@ export default function Home() {
   // esa materia se restringe a esa única comisión ignorando los excluir.
   const [pinnedComisiones, setPinnedComisiones] = useState<Set<string>>(new Set())
   const [filtersOpen, setFiltersOpen] = useState(false)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
   const [isDark, setIsDark] = useState(false)
 
   // Sync dark class on <html> and read system preference on mount
@@ -159,6 +160,8 @@ export default function Home() {
         ? [...prev, codigo]
         : prev
     )
+    // En mobile el drawer tapa el calendario; al agregar, lo cerramos.
+    setSidebarOpen(false)
   }, [])
 
   const handleRemoveMateria = useCallback((codigo: string) => {
@@ -242,13 +245,35 @@ export default function Home() {
       <div className="flex flex-col h-screen overflow-hidden">
         {/* Header */}
         <header
-          className="shrink-0 flex items-center gap-3 px-4 py-3 z-10"
+          className="shrink-0 flex items-center gap-3 px-4 py-3 z-50"
           style={{
             background: bgHeader,
             borderBottom: `1px solid ${borderColor}`,
             backdropFilter: 'blur(8px)',
           }}
         >
+          {ofertaData && (
+            <button
+              type="button"
+              className="md:hidden w-8 h-8 flex items-center justify-center rounded-lg shrink-0 transition-colors"
+              style={{ border: `1px solid ${borderColor}`, color: mutedColor }}
+              onClick={() => setSidebarOpen(o => !o)}
+              aria-label={sidebarOpen ? 'Cerrar menú de materias' : 'Abrir menú de materias'}
+              aria-expanded={sidebarOpen}
+              onMouseEnter={e => (e.currentTarget.style.color = textColor)}
+              onMouseLeave={e => (e.currentTarget.style.color = mutedColor)}
+            >
+              {sidebarOpen ? (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+              )}
+            </button>
+          )}
           <div className="flex-1 min-w-0">
             <h1 className="text-base font-bold leading-tight truncate" style={{ color: textColor }}>
               ¿A qué comisión me anoto?
@@ -288,6 +313,7 @@ export default function Home() {
                   setSelectedMaterias([])
                   setPinnedComisiones(new Set())
                   setExcludedFilters(new Set())
+                  setSidebarOpen(false)
                 }}
                 className="text-xs px-2 py-1 rounded-lg transition-colors"
                 style={{
@@ -325,10 +351,26 @@ export default function Home() {
         </header>
 
         {/* Body: sidebar + main */}
-        <div className="flex flex-1 min-h-0">
-          {/* Sidebar */}
+        <div className="flex flex-1 min-h-0 relative">
+          {/* Mobile backdrop */}
+          {ofertaData && sidebarOpen && (
+            <div
+              className="absolute inset-0 z-40 bg-black/40 md:hidden"
+              onClick={() => setSidebarOpen(false)}
+              aria-hidden="true"
+            />
+          )}
+
+          {/* Sidebar: drawer on mobile, fixed column on md+ */}
           {ofertaData && (
-            <div className="w-60 shrink-0 overflow-y-auto">
+            <div
+              className={[
+                'z-50 overflow-y-auto',
+                'absolute inset-y-0 left-0 w-72 max-w-[85vw] transition-transform duration-200 ease-out',
+                sidebarOpen ? 'translate-x-0' : '-translate-x-full',
+                'md:static md:translate-x-0 md:w-60 md:max-w-none md:shrink-0 md:transition-none',
+              ].join(' ')}
+            >
               <MateriaSidebar
                 comisiones={uniqueComisiones}
                 selectedMaterias={selectedMaterias}
@@ -342,7 +384,7 @@ export default function Home() {
           )}
 
           {/* Main content */}
-          <main className="flex-1 overflow-y-auto">
+          <main className="flex-1 min-w-0 overflow-y-auto">
             {!ofertaData ? (
               // Placeholder while selector overlay is shown
               <div className="h-full flex items-center justify-center">
@@ -351,7 +393,7 @@ export default function Home() {
             ) : selectedMaterias.length === 0 ? (
               <EmptyState isDark={isDark} textColor={textColor} mutedColor={mutedColor} />
             ) : (
-              <div className="p-4 flex flex-col gap-4">
+              <div className="p-2 sm:p-4 flex flex-col gap-4">
                 {/* Filters trigger + status bar */}
                 <div className="flex items-center gap-3 flex-wrap">
                   <button
@@ -507,7 +549,12 @@ function EmptyState({
           Elegí tus materias
         </p>
         <p className="text-sm mt-1 max-w-xs" style={{ color: mutedColor }}>
-          Buscá y agregá materias en el panel izquierdo para ver todas las combinaciones de comisiones posibles.
+          <span className="md:hidden">
+            Abrí el menú ☰ arriba a la izquierda, buscá y agregá materias para ver las combinaciones de comisiones.
+          </span>
+          <span className="hidden md:inline">
+            Buscá y agregá materias en el panel izquierdo para ver todas las combinaciones de comisiones posibles.
+          </span>
         </p>
       </div>
       <div
